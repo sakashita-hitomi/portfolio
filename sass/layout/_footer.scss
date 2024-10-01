@@ -1,0 +1,9 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+.footer {
+    border-radius: 36% 36% 0 0;
+    height: 100px;
+    background: $orange;
+}

@@ -1,0 +1,405 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+.btn {
+    position: relative;
+    width: 310px;
+    height: 50px;
+    margin: 0 auto 100px;
+    background: $darkorange;
+    border-radius: 40px;
+    font-family: $mohave;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        width: 45px;
+        height: 45px;
+        background: url(../images/btn.svg) center center / cover;
+    }
+
+    &__link {
+        display: block;
+        padding: 16px 50px;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+    }
+    &:hover {
+        background: $orange;
+        transition: all 0.5s;
+    }
+}
+
+.mv {
+    margin-bottom: 70px;
+
+    &__img {
+        width: 100%;
+        height: 350px;
+        background: url(../images/mv.png) center center / contain no-repeat;
+    }
+
+    &__ttl {
+        margin: 0 7%;
+        font-size: 37px;
+        font-family: $mohave;
+        color: $orange;
+    }
+
+    &__txt {
+        margin: 0 7%;
+        font-style: 14px;
+        font-weight: bold;
+    }
+}
+
+.about {
+    margin: 0 7%;
+
+    &__con {
+        position: relative;
+        padding: 50px;
+        @include maru(33% 67% 52% 48% / 52% 32% 68% 48%);
+        margin-bottom: 100px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -205px;
+            left: 0;
+            width: 200px;
+            height: 250px;
+            background: url(../images/about1.png) center center / cover;
+
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -76px;
+            left: -18px;
+            width: 160px;
+            height: 140px;
+            background: url(../images/about2.png) center center / cover;
+
+        }
+    }
+
+    &__ttl {
+        position: relative;
+        font-size: 10px;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 5px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -22px;
+            left: -50px;
+            width: 89px;
+            height: 89px;
+            @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 110px;
+            right: -75px;
+            width: 147px;
+            height: 147px;
+            @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+        }
+    }
+
+    &__txt {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 15px;
+
+        &__sub {
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+    }
+
+    &__arch {
+        width: 258px;
+        margin: 0 auto 200px;
+    }
+}
+
+.work {
+    margin: 0 7%;
+    &__ttl {
+        position: relative;
+        font-size: 10px;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 5px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 103px;
+            left: -50px;
+            width: 89px;
+            height: 89px;
+            @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: -69px;
+            right: -75px;
+            width: 147px;
+            height: 147px;
+            @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+        }
+    }
+
+    &__arch {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    &__txt {
+        font-style: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        &__sub {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__txt2 {
+        position: relative;
+        text-align: center;
+        font-style: 15px;
+        font-weight: bold;
+        margin-bottom: 20px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 272px;
+            left: -50px;
+            width: 89px;
+            height: 89px;
+            @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -69px;
+            right: -96px;
+            width: 147px;
+            height: 147px;
+            @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+        }
+    }
+
+    &__con {
+        margin-bottom: 30px;
+    }
+
+    &__pic,
+    &__pic2 {
+        margin-bottom: 8px;
+    }
+    &__pic2 {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: -54px;
+            left: -68px;
+            width: 147px;
+            height: 147px;
+            @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+        }
+    }
+
+    &__shum {
+        margin: 0 auto 20px;
+        width: 216px;
+
+        &__img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__anime {
+        margin-bottom: 100px;
+
+        &__con {
+            position: relative;
+            width: 259px;
+            height: 255px;
+            padding: 15px;
+            background: $yellow;
+            border-radius: 32px;
+            text-align: center;
+
+            &::after {
+                content: "サイト";
+                position: absolute;
+                top: -9px;
+                right: -13px;
+                width: 50px;
+                height: 50px;
+                border: 1px solid $lightgray;
+                border-radius: 50%;
+                background: #fff;
+            }
+        }
+
+        &__img {
+            width: 227px;
+            height: 134px;
+            margin: 0 auto 10px;
+            border-radius: 70px;
+            background: url(../images/anime1.png) center center / cover;
+        }
+
+        &__ttl {
+            font-size: 9px;
+            margin-bottom: 9px;
+        }
+
+        &__txt {
+            font-size: 14px;
+        }
+    }
+}
+
+.skill {
+    background: $lightgray;
+
+    &__ttl {
+        font-size: 10px;
+        font-weight: normal;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    &__arch {
+        width: 322px;
+        margin: 0 auto 30px;
+    }
+
+    &__con {
+        margin: 0 7%;
+        // text-align: center;
+    }
+
+    &__box1,
+    &__box2,
+    &__box3 {
+        position: relative;
+        width: 292px;
+        height: 160px;
+        margin-bottom: 20px;
+       
+    }
+    &__box1 {
+        padding: 30px;
+        @include maru(42% 58% 55% 45% / 59% 36% 64% 41%);
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background: url(../images/skill1.png) center center / cover;
+    }
+}
+    &__box2 {
+        padding: 45px;
+        @include maru(40% 58% 55% 55% / 59% 36% 64% 41%);
+    &::after {
+        position: absolute;
+        content: "";
+        right: -12px;
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+        background: url(../images/skill2.png) center center / cover;
+    }
+}
+    &__box3 {
+        padding-top: 40px;
+        @include maru(42% 42% 55% 45% / 59% 51% 64% 50%);
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: -17px;
+        left: 0;
+        width: 120px;
+        height: 120px;
+        background: url(../images/skill3.png) center center / cover;
+    }
+}
+
+    &__boxt {
+        width: 174px;
+        margin-left: 33%;
+        line-height: 1.4;
+        font-weight: bold;
+    }
+
+    &__ty {
+        width: 100%;
+        height: 285px;
+        text-align: center;
+        color: #fff;
+        background: url(../images/Frame.jpg) center center / cover;
+
+        &__txt {
+            position: relative;
+            padding: 60px;
+            line-height: 1.4;
+            font-size: 18px;
+            font-weight: bold;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 30px;
+                left: 49%;
+                width: 15px;
+                font-weight: normal;
+                border: 1px solid #fff;
+                transform: rotate(90deg);
+            }
+        }
+
+        &__sub {
+            font-size: 12px;
+            font-family: $mohave;
+        }
+    }
+}
+.form {
+    width: 90%;
+    height: 100px;
+    margin: 0 7%;
+    background: $lightgray;
+}

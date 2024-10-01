@@ -1,0 +1,11 @@
+// settingフォルダの変数を読み込みます
+
+@use "../setting" as *;
+
+@mixin maru ($value){
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
+    border-radius: $value;
+    background: #ff8718;
+}
