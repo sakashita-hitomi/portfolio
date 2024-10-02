@@ -4,6 +4,16 @@
 
 .footer {
     border-radius: 36% 36% 0 0;
-    height: 100px;
+    // height: 100px;
     background: $orange;
+    &__box {
+        width: 250px;
+        height: 200px;
+    }
+    &__copy {
+        text-align: center;
+        padding-bottom: 10px;
+        color: #fff;
+        font-size: 10px;
+    }
 }

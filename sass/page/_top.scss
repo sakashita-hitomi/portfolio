@@ -277,34 +277,35 @@
     &__anime {
         margin-bottom: 100px;
 
-        &__con {
-            position: relative;
-            width: 259px;
-            height: 255px;
-            padding: 15px;
-            background: $yellow;
-            border-radius: 32px;
-            text-align: center;
-
-            &::after {
-                content: "サイト";
-                position: absolute;
-                top: -9px;
-                right: -13px;
-                width: 50px;
-                height: 50px;
-                border: 1px solid $lightgray;
-                border-radius: 50%;
-                background: #fff;
+        &__con1 {
+            @include work-pic($yellow, サイト);
+            &__img {
+                width: 227px;
+                height: 134px;
+                margin: 0 auto 10px;
+                border-radius: 70px;
+                background: url(../images/anime1.png) center center / cover;
             }
         }
-
-        &__img {
-            width: 227px;
-            height: 134px;
-            margin: 0 auto 10px;
-            border-radius: 70px;
-            background: url(../images/anime1.png) center center / cover;
+        &__con2 {
+            @include work-pic($pink, サムネ);
+            &__img {
+                width: 227px;
+                height: 134px;
+                margin: 0 auto 10px;
+                border-radius: 70px;
+                background: url(../images/thum1.jpg) center center / cover;
+            }
+        }
+        &__con3 {
+            @include work-pic($red, カンプ);
+            &__img {
+                width: 227px;
+                height: 134px;
+                margin: 0 auto 10px;
+                border-radius: 70px;
+                background: url(../images/anime1.png) center center / cover;
+            }
         }
 
         &__ttl {
@@ -320,7 +321,7 @@
 
 .swiper-work {
 width: 100%;
-height: 100vh;
+height: 300px;
 }
 
 .skill {
