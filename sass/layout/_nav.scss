@@ -16,28 +16,35 @@
     transform: translateX(100%);
     transition: .4s;
     font-size: 14px;
+    &__nav {
+        width: 100%;
+    }
 
     &__list {
         // position: absolute;
         // top: 50%;
         // transform: translateY(-50%);
         margin-bottom: 60px;
-        &::before {
-            content: "";
-            width: 30px;
-            height: 30px;
-            background: url(../images/arrow.png) center / center cover;
-        }
     }
-
+    
     
     &__link {
+        position: relative;
         display: block;
         color: #fff;
         text-decoration: none;
         padding: 10px 38%;
         &:hover {
             color:$darkorange;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 113px;
+            width: 30px;
+            height: 30px;
+            background: url(../images/arrow.png) center center / cover;
         }
     }
 }

@@ -20,15 +20,12 @@
         color: $orange;
     }
     &__btn {
-        // width: 62px;
-        // height: 62px;
-        // background: $darkorange;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 48px;
-        height: 48px;
+        width: 62px;
+        height: 62px;
         background: $darkorange;
         cursor: pointer;
         z-index: 1;
