@@ -28,6 +28,7 @@
         text-align: center;
         color: #fff;
     }
+
     &:hover {
         background: $orange;
         transition: all 0.5s;
@@ -137,6 +138,7 @@
 
 .work {
     margin: 0 7%;
+
     &__ttl {
         position: relative;
         font-size: 10px;
@@ -218,8 +220,10 @@
     &__pic2 {
         margin-bottom: 8px;
     }
+
     &__pic2 {
         position: relative;
+
         &::before {
             content: "";
             position: absolute;
@@ -316,47 +320,53 @@
         width: 292px;
         height: 160px;
         margin-bottom: 20px;
-       
+
     }
+
     &__box1 {
         padding: 30px;
         @include maru(42% 58% 55% 45% / 59% 36% 64% 41%);
-    &::after {
-        position: absolute;
-        content: "";
-        bottom: 0;
-        left: 0;
-        width: 100px;
-        height: 100px;
-        background: url(../images/skill1.png) center center / cover;
+
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background: url(../images/skill1.png) center center / cover;
+        }
     }
-}
+
     &__box2 {
         padding: 45px;
         @include maru(40% 58% 55% 55% / 59% 36% 64% 41%);
-    &::after {
-        position: absolute;
-        content: "";
-        right: -12px;
-        bottom: 0;
-        width: 100px;
-        height: 100px;
-        background: url(../images/skill2.png) center center / cover;
+
+        &::after {
+            position: absolute;
+            content: "";
+            right: -12px;
+            bottom: 0;
+            width: 100px;
+            height: 100px;
+            background: url(../images/skill2.png) center center / cover;
+        }
     }
-}
+
     &__box3 {
         padding-top: 40px;
         @include maru(42% 42% 55% 45% / 59% 51% 64% 50%);
-    &::after {
-        position: absolute;
-        content: "";
-        bottom: -17px;
-        left: 0;
-        width: 120px;
-        height: 120px;
-        background: url(../images/skill3.png) center center / cover;
+
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: -17px;
+            left: 0;
+            width: 120px;
+            height: 120px;
+            background: url(../images/skill3.png) center center / cover;
+        }
     }
-}
 
     &__boxt {
         width: 174px;
@@ -397,9 +407,58 @@
         }
     }
 }
+
 .form {
     width: 90%;
     height: 100px;
     margin: 0 7%;
     background: $lightgray;
+
+    &__box {
+        margin-bottom: 20px;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 20px;
+
+        &::after {
+            content: "*";
+            color: #f00;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 10px;
+        background: #ccc;
+        border: none;
+        border-radius: 7px;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+    }
+
+    &__message {
+        width: 100%;
+        height: 130px;
+        padding: 10px;
+        background: #ccc;
+        border: none;
+        border-radius: 7px;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+    }
+
+    &__submit {
+        width: 100%;
+        padding: 10px;
+        background: #616161;
+        border: none;
+        border-radius: 7px;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        -webkit-appearance: none;
+    }
 }
