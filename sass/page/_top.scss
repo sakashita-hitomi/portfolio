@@ -278,32 +278,23 @@
         margin-bottom: 100px;
 
         &__con1 {
-            @include work-pic($yellow, サイト);
+            @include work-pic($yellow, 'サイト');
             &__img {
-                width: 227px;
-                height: 134px;
-                margin: 0 auto 10px;
-                border-radius: 70px;
+                @include work-img;
                 background: url(../images/anime1.png) center center / cover;
             }
         }
         &__con2 {
-            @include work-pic($pink, サムネ);
+            @include work-pic($pink, 'サムネ');
             &__img {
-                width: 227px;
-                height: 134px;
-                margin: 0 auto 10px;
-                border-radius: 70px;
+                @include work-img;
                 background: url(../images/thum1.jpg) center center / cover;
             }
         }
         &__con3 {
-            @include work-pic($red, カンプ);
+            @include work-pic($red, 'カンプ');
             &__img {
-                width: 227px;
-                height: 134px;
-                margin: 0 auto 10px;
-                border-radius: 70px;
+                @include work-img;
                 background: url(../images/anime1.png) center center / cover;
             }
         }
@@ -317,6 +308,9 @@
             font-size: 14px;
         }
     }
+}
+.swiper {
+    overflow: visible;
 }
 
 .swiper-work {
