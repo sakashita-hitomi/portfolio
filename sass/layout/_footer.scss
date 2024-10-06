@@ -3,17 +3,53 @@
 @use "../global" as *;
 
 .footer {
-    border-radius: 36% 36% 0 0;
-    // height: 100px;
-    background: $orange;
+    &__home {
+        position: relative;
+&::after {
+    position: absolute;
+    content: 'HOME';
+    top: 3px;
+    right: 109px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding-top: 10px;
+    font-size: 9px;
+    text-align: center;
+    background: $darkorange;
+    color: #fff;
+}
+// .footer__home:hover::after {
+//     cursor: pointer;
+// }
+        &__link {
+            display: block;
+            padding: 10px 60px;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
     &__box {
-        width: 250px;
+        margin: 0 auto;
+        width: 78%;
         height: 200px;
+        
     }
     &__copy {
+        position: relative;
         text-align: center;
         padding-bottom: 10px;
         color: #fff;
         font-size: 10px;
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: -10px;
+            left: -54px;
+            width: 150%;
+            height: 300px;
+            z-index: -1;
+            @include maru(40% 58% 55% 0% / 57% 100% 10% 39%);
+        }
     }
 }
