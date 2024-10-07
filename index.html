@@ -135,15 +135,17 @@
           </div>
         </div>
       </div>
-      <p class="work__txt2">作成したサムネイルを紹介</p>
-      <div class="work__shumbox">
-        <p class="work__shum"><img src="images/thum1.jpg" alt="" class="work__shum__img"></p>
-        <p class="work__shum"><img src="images/thum2.jpg" alt="" class="work__shum__img"></p>
-        <p class="work__shum"><img src="images/thum3.jpg" alt="" class="work__shum__img"></p>
-      </div>
-      <!-- ボタン -->
-      <div class="btn">
-        <p class="btn__txt"><a href="#" class="btn__link">VIEW MORE</a></p>
+      <div class="work__shumcon">
+        <p class="work__txt2">作成したサムネイルを紹介</p>
+        <div class="work__shumbox">
+          <p class="work__shum"><img src="images/thum1.jpg" alt="" class="work__shum__img"></p>
+          <p class="work__shum"><img src="images/thum2.jpg" alt="" class="work__shum__img"></p>
+          <p class="work__shum"><img src="images/thum3.jpg" alt="" class="work__shum__img"></p>
+        </div>
+        <!-- ボタン -->
+        <div class="btn">
+          <p class="btn__txt"><a href="#" class="btn__link">VIEW MORE</a></p>
+        </div>
       </div>
 
       <div class="work__anime">
@@ -222,28 +224,29 @@
     <section id="contact" class="contact">
       <p class="contact__ttl">[CONTACT]</p>
       <p class="contact__arch"><img src="images/contact.png" alt="お問い合わせ" class="contact__archimg"></p>
-
-      <form
-        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdxR_SsY9GmNwNqSHA8kA0sXIEOU8bwifuBGnAvNCSWv5rLyQ/formResponse"
-        id="contactform" class="form" method="post" target="hidden_iframe" onsubmit="submitted=true;">
-        <div class="form__box">
-          <label for="name" class="form__label">お名前</label>
-          <input id="name" type="text" class="form__input" name="entry.1924536524" required placeholder="山田　太郎">
-        </div>
-        <div class="form__box">
-          <label for="email" class="form__label">メールアドレス</label>
-          <input id="email" type="email" class="form__input" name="entry.2109378042" required
-            placeholder="sample@gmail.com">
-        </div>
-        <div class="form__box">
-          <label for="message" class="form__label">お問い合わせ内容</label>
-          <textarea name="entry.95827106" id="message" class="form__message" required
-            placeholder="お問い合わせ内容を入力してください"></textarea>
-        </div>
-        <div class="form__box">
-          <input type="submit" class="form__submit" value="送信する">
-        </div>
-      </form>
+      <div class="contact__con">
+        <form
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdxR_SsY9GmNwNqSHA8kA0sXIEOU8bwifuBGnAvNCSWv5rLyQ/formResponse"
+          id="contactform" class="form" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+          <div class="form__box">
+            <label for="name" class="form__label">お名前</label>
+            <input id="name" type="text" class="form__input" name="entry.1924536524" required placeholder="山田　太郎">
+          </div>
+          <div class="form__box">
+            <label for="email" class="form__label">メールアドレス</label>
+            <input id="email" type="email" class="form__input" name="entry.2109378042" required
+              placeholder="sample@gmail.com">
+          </div>
+          <div class="form__box">
+            <label for="message" class="form__label">お問い合わせ内容</label>
+            <textarea name="entry.95827106" id="message" class="form__message" required
+              placeholder="お問い合わせ内容を入力してください"></textarea>
+          </div>
+          <div class="form__box">
+            <input type="submit" class="form__submit" value="送信する">
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="footer">
