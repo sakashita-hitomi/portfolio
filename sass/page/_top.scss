@@ -12,6 +12,9 @@
     background: $darkorange;
     border-radius: 40px;
     font-family: $mohave;
+    @media screen and (min-width: 768px) {
+      margin: 50px auto;
+    }
 
     &::before {
         content: "";
@@ -44,32 +47,56 @@
 
 .mv {
     margin-bottom: 120px;
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 170px;
+    }
 
     &__img {
         position: relative;
         width: 100%;
         height: 350px;
         background: url(../images/mv.png) center center / contain no-repeat;
+
+        @media screen and (min-width: 768px) {
+            width: 100%;
+            top: 80px;
+            background-position: right top;
+        }
+        @media screen and (min-width: 1024px) {
+          height: 100vh;
+        }
     }
 
     &__ttl {
         margin: 0 7%;
-        font-size: 37px;
+        font-size: 9vw;
         font-family: $mohave;
         color: $orange;
+        @media screen and (min-width: 1024px) {
+          font-size: 132px;
+        }
     }
 
     &__txt {
         margin: 0 7%;
-        font-style: 14px;
+        font-size: 4vw;
         font-weight: bold;
+        @media screen and (min-width: 1024px) {
+          font-size: 38px;
+          margin-bottom: 160px;
+        }
     }
 
     &__box {
         position: absolute;
-        width: 333px;
+        width: 90%;
         bottom: -37px;
         left: 0;
+
+        @media screen and (min-width: 768px) {
+            bottom: -135px;
+            margin-bottom: 100px;
+        }
     }
 }
 
@@ -80,8 +107,11 @@
     &__con {
         position: relative;
         padding: 50px 0;
-        // @include maru(33% 67% 52% 48% / 52% 32% 68% 48%);
         margin-bottom: 100px;
+
+        @media screen and (min-width: 768px) {
+            width: 450px;
+        }
 
         &::before {
             content: "";
@@ -92,6 +122,12 @@
             height: 250px;
             background: url(../images/about1.png) center center / cover;
 
+            @media screen and (min-width: 768px) {
+                top: -97px;
+                left: 91%;
+                width: 370px;
+                height: 400px;
+            }
         }
 
         &::after {
@@ -103,6 +139,11 @@
             height: 140px;
             background: url(../images/about2.png) center center / cover;
 
+            @media screen and (min-width: 768px) {
+                left: 80%;
+                width: 225px;
+                height: 197px;
+            }
         }
     }
 
@@ -112,6 +153,14 @@
         font-weight: normal;
         text-align: center;
         margin-bottom: 5px;
+        color: #000;
+        @media screen and (min-width: 768px) {
+          font-size: 15px;
+        }
+        @media screen and (min-width: 1024px) {
+          font-size: 20px;
+          margin: 100px;
+        }
 
         &::before {
             content: "";
@@ -121,8 +170,18 @@
             width: 89px;
             height: 89px;
             @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
+            @media screen and (min-width: 768px) {
+              top: 61px;
+              left: -88px;
+              width: 114px;
+              height: 107px;
+            }
+            @media screen and (min-width: 1024px) {
+              width: 218px;
+              height: 180px;
+            }
         }
-
+        
         &::after {
             content: "";
             position: absolute;
@@ -131,6 +190,13 @@
             width: 147px;
             height: 147px;
             @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+            @media screen and (min-width: 768px) {
+              top: 223px;
+              right: -113px;
+              width: 213px;
+              height: 225px;
+              @include maru(62% 62% 45% 55% / 57% 54% 46% 43%);
+            }
         }
     }
 
@@ -139,6 +205,10 @@
         font-size: 17px;
         font-weight: bold;
         margin-bottom: 22px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 22px;
+        }
 
         &::before {
             content: "";
@@ -156,12 +226,31 @@
             margin-bottom: 15px;
             font-size: 14px;
             line-height: 1.8;
+
+            @media screen and (min-width: 768px) {
+                font-size: 15px;
+                line-height: 2;
+            }
         }
     }
 
     &__arch {
         width: 258px;
         margin: 0 auto 200px;
+
+        @media screen and (min-width: 768px) {
+            width: 458px;
+        }
+        @media screen and (min-width: 1024px) {
+          width: 522px;
+        }
+    }
+
+    &__archimg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -174,6 +263,9 @@
         font-weight: normal;
         text-align: center;
         margin-bottom: 5px;
+        @media screen and (min-width: 768px) {
+          font-size: 15px;
+        }
 
         &::before {
             content: "";
@@ -183,6 +275,12 @@
             width: 89px;
             height: 89px;
             @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
+            @media screen and (min-width: 768px) {
+                top: 127px;
+                left: -98px;
+              width: 167px;
+              height: 157px;
+            }
         }
 
         &::after {
@@ -194,23 +292,49 @@
             width: 147px;
             height: 147px;
             @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+            @media screen and (min-width: 768px) {
+                right: -139px;
+              width: 176px;
+              height: 171px;
+            }
         }
     }
 
     &__arch {
         width: 280px;
         margin: 0 auto 18px;
+
+        @media screen and (min-width: 768px) {
+            width: 500px;
+            margin: 0 auto 68px;
+        }
+    }
+
+    &__archimg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__txtbox {
+        margin: 30px 0 0 20px;
     }
 
     &__txt {
-        font-style: 15px;
+        font-size: 15px;
         font-weight: bold;
         margin-bottom: 10px;
+@media screen and (min-width: 768px) {
+  font-size: 21px;
+}
 
         &__sub {
             position: relative;
             font-size: 14px;
             margin-bottom: 15px;
+            @media screen and (min-width: 768px) {
+              font-size: 16px;
+            }
         }
     }
 
@@ -229,6 +353,10 @@
             width: 89px;
             height: 89px;
             @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
+            @media screen and (min-width: 768px) {
+              width: 210px;
+              height: 198px;
+            }
         }
 
         &::after {
@@ -239,12 +367,23 @@
             width: 147px;
             height: 147px;
             @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+            @media screen and (min-width: 768px) {
+              right: -145px;
+              width: 250px;
+              height: 236px;
+              z-index: -1;
+            }
         }
     }
 
     &__con {
         width: 300px;
-        margin: 0 auto 30px;
+        margin: 0 auto 140px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            width: 100%;
+        }
     }
 
     &__pic,
@@ -264,6 +403,12 @@
             width: 112px;
             height: 100px;
             @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+            @media screen and (min-width: 768px) {
+                bottom: -23%;
+                right: -169%;
+              width: 219px;
+              height: 227px;
+            }
         }
     }
 
@@ -285,16 +430,28 @@
             width: 100%;
         }
     }
+    &__shumbox {
+@media screen and (min-width: 768px) {
+  display: flex;
+  flex-wrap: wrap;
+    width: 600px;
+    margin: 0 auto;
+}
+        
+    }
 
     &__shum {
         margin: 0 auto 20px;
         width: 216px;
-
-        &__img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        @media screen and (min-width: 768px) {
+          width: 230px;
+          
+          &__img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
         }
     }
 
@@ -357,16 +514,34 @@
         text-align: center;
         padding-top: 30px;
         margin-bottom: 5px;
+        @media screen and (min-width: 768px) {
+          font-size: 15px;
+        }
     }
 
     &__arch {
         width: 322px;
         margin: 0 auto 30px;
+        @media screen and (min-width: 768px) {
+          width: 570px;
+        }
+    }
+    &__archimg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     &__con {
-        margin: 0 7% 60px;
-        // text-align: center;
+        width: 300px;
+        margin: 0 auto 60px;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+              width: 600px;
+              margin: 0 auto;
+          }
     }
 
     &__box1,
@@ -444,6 +619,9 @@
             line-height: 1.4;
             font-size: 18px;
             font-weight: bold;
+            @media screen and (min-width: 768px) {
+              font-size: 20px;
+            }
 
             &::after {
                 content: "";
@@ -460,6 +638,9 @@
         &__sub {
             font-size: 12px;
             font-family: $mohave;
+            @media screen and (min-width: 768px) {
+              font-size: 14px;
+            }
         }
     }
 }
@@ -473,22 +654,55 @@
         text-align: center;
         padding-top: 30px;
         margin-bottom: 10px;
+        @media screen and (min-width: 768px) {
+          font-size: 15px;
+        }
     }
 
     &__arch {
+        position: relative;
         width: 304px;
         margin: 0 auto 100px;
+        @media screen and (min-width: 768px) {
+          width: 538px;
+          &::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            bottom: -40px;
+            right: -232px;
+            width: 40%;
+            height: 220px;
+            @include maru (39% 57% 49% 59% / 59% 44% 60% 43%);
+        } 
+          &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            bottom: -660px;
+            left: -148px;
+            width: 20%;
+            height: 134px;
+            @include maru (39% 57% 49% 59% / 59% 44% 60% 43%);
+        } 
+        }
+    }
+    &__archimg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     &::before {
         content: "";
         position: absolute;
         z-index: -1;
-        bottom: -84px;
-        left: -66px;
-        width: 147%;
-        height: 560px;
-        @include maru (40% 58% 55% 55% / 59% 36% 64% 41%);
+        bottom: -93px;
+        left: 24px;
+        width: 93%;
+        height: 584px;
+        @include maru (39% 57% 49% 59% / 59% 44% 60% 43%);
     }
 }
 

@@ -3,53 +3,118 @@
 @use "../global" as *;
 
 .footer {
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: -54px;
+        width: 150%;
+        height: 300px;
+        z-index: -1;
+        @include maru(40% 58% 55% 0% / 57% 100% 10% 39%);
+    }
+
     &__home {
         position: relative;
-&::after {
-    position: absolute;
-    content: 'HOME';
-    top: 3px;
-    right: 109px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    padding-top: 10px;
-    font-size: 9px;
-    text-align: center;
-    background: $darkorange;
-    color: #fff;
-}
-// .footer__home:hover::after {
-//     cursor: pointer;
-// }
+        margin: 0 7% 30px;
+
+        @media screen and (min-width: 768px) {
+            width: 359px;
+            font-size: 20px;
+        }
+
+        &::after {
+            position: absolute;
+            content: 'HOME';
+            top: 18px;
+            right: 78px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            padding-top: 10px;
+            font-size: 9px;
+            text-align: center;
+            background: $darkorange;
+            color: #fff;
+        }
+
         &__link {
             display: block;
-            padding: 10px 60px;
+            padding: 21px 60px 10px;
+            text-decoration: none;
+            color: #fff;
+
+        }
+    }
+
+    &__box {
+        margin: 0 auto;
+        width: 86%;
+        height: 200px;
+
+    }
+
+    &__gnav {
+        &__nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            @media screen and (min-width: 768px) {
+                width: 84%;
+                flex-wrap: nowrap;
+                padding: 10px 20px;
+            }
+        }
+
+        &__list {
+
+            font-size: 10px;
+
+            @media screen and (min-width: 768px) {
+                font-size: 15px;
+            }
+        }
+
+        &__link {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 30px 70px 9px 20px;
+            @media screen and (min-width: 768px) {
+              padding: 10px 10px;
+            }
+
+            &:hover {
+                color: $darkorange;
+            }
+        }
+
+        &__lists {
+            font-size: 9px;
+
+            @media screen and (min-width: 768px) {
+                font-size: 10px;
+            }
+        }
+
+        &__links {
+            display: block;
+            padding: 10px 36px 5px 36px;
             text-decoration: none;
             color: #fff;
         }
     }
-    &__box {
-        margin: 0 auto;
-        width: 78%;
-        height: 200px;
-        
-    }
+
     &__copy {
-        position: relative;
+        // position: relative;
         text-align: center;
         padding-bottom: 10px;
         color: #fff;
         font-size: 10px;
-        &::before {
-            position: absolute;
-            content: "";
-            bottom: -10px;
-            left: -54px;
-            width: 150%;
-            height: 300px;
-            z-index: -1;
-            @include maru(40% 58% 55% 0% / 57% 100% 10% 39%);
-        }
     }
 }

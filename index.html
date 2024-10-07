@@ -53,10 +53,7 @@
   <link rel="icon" sizes="192x192" href="images/apple-touch-icon.png">
 
   <title>サイトタイトル</title>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,10 +68,10 @@
     <h1 class="header__ttl">SAKASHITA HITOMI<br>PORTFOLIO</h1>
     <div id="header__btn" class="header__btn">
       <span id="header__btn__top" class="header__btn__top"></span>
-        <span id="header__btn__middle" class="header__btn__middle"></span>
-        <span id="header__btn__bottom" class="header__btn__bottom"></span>
+      <span id="header__btn__middle" class="header__btn__middle"></span>
+      <span id="header__btn__bottom" class="header__btn__bottom"></span>
     </div>
-    <nav  id="gnav" class="gnav">
+    <nav id="gnav" class="gnav">
       <ul class="gnav__nav">
         <li class="gnav__list"><a href="#about" class="gnav__link">自己紹介</a></li>
         <li class="gnav__list"><a href="#work" class="gnav__link">作品紹介</a></li>
@@ -87,10 +84,10 @@
     <div class="mv">
       <div class="mv__img">
         <div class="mv__box">
-      <p class="mv__ttl">MAKE<br>EVERYTHING SMOOTH</p>
-      <p class="mv__txt">なにごともまぁるく</p>
-    </div>
-    </div>
+          <p class="mv__ttl">MAKE<br>EVERYTHING SMOOTH</p>
+          <p class="mv__txt">なにごともまぁるく</p>
+        </div>
+      </div>
     </div>
 
     <section id="about" class="about">
@@ -116,28 +113,34 @@
       <p class="work__arch"><img src="images/work.png" alt="作品紹介" class="work__archimg"></p>
       <div class="work__con">
         <p class="work__pic"><img src="images/work1.png" alt="サイト・カンプ紹介" class="work__img"></p>
-        <p class="work__txt">制作したサイト、<br>デザインカンプを紹介</p>
-        <p class="work__txt__sub">制作する上で意識しているのは<br>余白のとりかた、バランスです。</p>
-        <p class="work__txt__sub">コンセプトにあうデザインかつ、<br>見てくれている方に伝えたい情報が<br>わかりやすく伝わるかを追求しました。</p>
-      </div>
-      <!-- ボタン -->
-      <div class="btn">
-        <p class="btn__txt"><a href="#" class="btn__link">VIEW MORE</a></p>
+        <div class="work__txtbox">
+          <p class="work__txt">制作したサイト、<br>デザインカンプを紹介</p>
+          <p class="work__txt__sub">制作する上で意識しているのは<br>余白のとりかた、バランスです。</p>
+          <p class="work__txt__sub">コンセプトにあうデザインかつ、<br>見てくれている方に伝えたい情報が<br>わかりやすく伝わるかを追求しました。</p>
+          <!-- ボタン -->
+          <div class="btn">
+            <p class="btn__txt"><a href="#" class="btn__link">VIEW MORE</a></p>
+          </div>
+        </div>
       </div>
       <div class="work__con">
         <p class="work__pic2"><img src="images/work2.png" alt="バナー紹介" class="work__img2"></p>
-        <p class="work__txt">制作したバナーを紹介</p>
-        <p class="work__txt__sub">小さいバナーはよりしっかりと<br>伝えたいことを明確に、わかりやすくを<br>心がけています。</p>
-        <p class="work__txt__sub">文字の大きさや文字数、色の使い方で<br>簡潔に見やすくしています。</p>
-      </div>
-      <!-- ボタン -->
-      <div class="btn">
-        <p class="btn__txt"><a href="#" class="btn__link">VIEW MORE</a></p>
+        <div class="work__txtbox">
+          <p class="work__txt">制作したバナーを紹介</p>
+          <p class="work__txt__sub">小さいバナーはよりしっかりと<br>伝えたいことを明確に、わかりやすくを<br>心がけています。</p>
+          <p class="work__txt__sub">文字の大きさや文字数、色の使い方で<br>簡潔に見やすくしています。</p>
+          <!-- ボタン -->
+          <div class="btn">
+            <p class="btn__txt"><a href="#" class="btn__link">VIEW MORE</a></p>
+          </div>
+        </div>
       </div>
       <p class="work__txt2">作成したサムネイルを紹介</p>
-      <p class="work__shum"><img src="images/thum1.jpg" alt="" class="work__shum__img"></p>
-      <p class="work__shum"><img src="images/thum2.jpg" alt="" class="work__shum__img"></p>
-      <p class="work__shum"><img src="images/thum3.jpg" alt="" class="work__shum__img"></p>
+      <div class="work__shumbox">
+        <p class="work__shum"><img src="images/thum1.jpg" alt="" class="work__shum__img"></p>
+        <p class="work__shum"><img src="images/thum2.jpg" alt="" class="work__shum__img"></p>
+        <p class="work__shum"><img src="images/thum3.jpg" alt="" class="work__shum__img"></p>
+      </div>
       <!-- ボタン -->
       <div class="btn">
         <p class="btn__txt"><a href="#" class="btn__link">VIEW MORE</a></p>
@@ -146,43 +149,43 @@
       <div class="work__anime">
 
 
-      <div class="wrapper">
-        <!-- スワイパー本体 -->
-        <div class="swiper swiper-work">
-          <!-- スワイパーラッパー -->
-          <div class="swiper-wrapper swiper-work__wrapper">
-            <!-- スライド -->
-            <div class="swiper-slide swiper-work__slide1">
-              <div class="work__anime__con1">
-                <div class="work__anime__con1__img"></div>
-                <p class="work__anime__ttl">もふもふドーナツ</p>
-                <p class="work__anime__txt">架空のドーナツ屋のサイト</p>
-                <!-- リンク？ -->
+        <div class="wrapper">
+          <!-- スワイパー本体 -->
+          <div class="swiper swiper-work">
+            <!-- スワイパーラッパー -->
+            <div class="swiper-wrapper swiper-work__wrapper">
+              <!-- スライド -->
+              <div class="swiper-slide swiper-work__slide1">
+                <div class="work__anime__con1">
+                  <div class="work__anime__con1__img"></div>
+                  <p class="work__anime__ttl">もふもふドーナツ</p>
+                  <p class="work__anime__txt">架空のドーナツ屋のサイト</p>
+                  <!-- リンク？ -->
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide swiper-work__slide2">
-              <div class="work__anime__con2">
-                <div class="work__anime__con2__img"></div>
-                <p class="work__anime__ttl">もふもふドーナツ</p>
-                <p class="work__anime__txt">架空のドーナツ屋のサイト</p>
-                <!-- リンク？ -->
+              <div class="swiper-slide swiper-work__slide2">
+                <div class="work__anime__con2">
+                  <div class="work__anime__con2__img"></div>
+                  <p class="work__anime__ttl">もふもふドーナツ</p>
+                  <p class="work__anime__txt">架空のドーナツ屋のサイト</p>
+                  <!-- リンク？ -->
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide swiper-work__slide3">
-              <div class="work__anime__con3">
-                <div class="work__anime__con3__img"></div>
-                <p class="work__anime__ttl">もふもふドーナツ</p>
-                <p class="work__anime__txt">架空のドーナツ屋のサイト</p>
-                <!-- リンク？ -->
+              <div class="swiper-slide swiper-work__slide3">
+                <div class="work__anime__con3">
+                  <div class="work__anime__con3__img"></div>
+                  <p class="work__anime__ttl">もふもふドーナツ</p>
+                  <p class="work__anime__txt">架空のドーナツ屋のサイト</p>
+                  <!-- リンク？ -->
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
 
 
-        
+
       </div>
     </section>
     <section id="skill" class="skill">
@@ -206,10 +209,10 @@
         </div>
         <div class="skill__box3">
           <div class="skill__boxt">
-          <p class="skill__txt">・Git</p>
-          <p class="skill__txt">・video editing</p>
+            <p class="skill__txt">・Git</p>
+            <p class="skill__txt">・video editing</p>
+          </div>
         </div>
-      </div>
       </div>
       <div class="skill__ty">
         <p class="skill__ty__txt">ここまでみていただき<br>ありがとうございました</p>
@@ -218,49 +221,54 @@
     </section>
     <section id="contact" class="contact">
       <p class="contact__ttl">[CONTACT]</p>
-      <p class="contact__arch"><img src="images/contact.png" alt="お問い合わせ" class="form__img"></p>
-      
+      <p class="contact__arch"><img src="images/contact.png" alt="お問い合わせ" class="contact__archimg"></p>
+
       <form
-      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdxR_SsY9GmNwNqSHA8kA0sXIEOU8bwifuBGnAvNCSWv5rLyQ/formResponse"
-      id="contactform" class="form" method="post" target="hidden_iframe" onsubmit="submitted=true;">
-      <div class="form__box">
-        <label for="name" class="form__label">お名前</label>
-        <input id="name" type="text" class="form__input" name="entry.1924536524" required placeholder="山田　太郎">
-      </div>
-      <div class="form__box">
-        <label for="email" class="form__label">メールアドレス</label>
-        <input id="email" type="email" class="form__input" name="entry.2109378042" required
-          placeholder="sample@gmail.com">
-      </div>
-      <div class="form__box">
-        <label for="message" class="form__label">お問い合わせ内容</label>
-        <textarea name="entry.95827106" id="message" class="form__message" required
-          placeholder="お問い合わせ内容を入力してください"></textarea>
-      </div>
-      <div class="form__box">
-        <input type="submit" class="form__submit" value="送信する">
-      </div>
-    </form>
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdxR_SsY9GmNwNqSHA8kA0sXIEOU8bwifuBGnAvNCSWv5rLyQ/formResponse"
+        id="contactform" class="form" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+        <div class="form__box">
+          <label for="name" class="form__label">お名前</label>
+          <input id="name" type="text" class="form__input" name="entry.1924536524" required placeholder="山田　太郎">
+        </div>
+        <div class="form__box">
+          <label for="email" class="form__label">メールアドレス</label>
+          <input id="email" type="email" class="form__input" name="entry.2109378042" required
+            placeholder="sample@gmail.com">
+        </div>
+        <div class="form__box">
+          <label for="message" class="form__label">お問い合わせ内容</label>
+          <textarea name="entry.95827106" id="message" class="form__message" required
+            placeholder="お問い合わせ内容を入力してください"></textarea>
+        </div>
+        <div class="form__box">
+          <input type="submit" class="form__submit" value="送信する">
+        </div>
+      </form>
     </section>
   </main>
   <footer class="footer">
     <p class="footer__home"><a href="top" class="footer__home__link">SAKASHITA HITOMI</a></p>
     <div class="footer__box">
-    <nav class="footer__gnav">
-      <ul class="footer__gnav__nav">
-        <li class="footer__gnav__list"><a href="#about" class="footer__gnav__link">自己紹介　</a></li>
-        <li class="footer__gnav__list"><a href="#work" class="footer__gnav__link">作品紹介　</a></li>
-        <li class="footer__gnav__list"><a href="#skill" class="footer__gnav__link">スキル紹介</a></li>
-        <li class="footer__gnav__list"><a href="#contact" class="footer__gnav__link">問い合わせ</a></li>
-      </ul>
-    </nav>
-  </div>
+      <nav class="footer__gnav">
+        <ul class="footer__gnav__nav">
+          <li class="footer__gnav__list"><a href="#about" class="footer__gnav__link">自己紹介　</a></li>
+          <div class="footer__gnav__box">
+            <li class="footer__gnav__list"><a href="#work" class="footer__gnav__link">作品紹介　</a></li>
+            <li class="footer__bnav__lists"><a href="#" class="footer__gnav__links">ーサイト紹介</a></li>
+            <li class="footer__bnav__lists"><a href="#" class="footer__gnav__links">ーバナー紹介</a></li>
+            <li class="footer__bnav__lists"><a href="#" class="footer__gnav__links">ーサムネイル紹介</a></li>
+          </div>
+          <li class="footer__gnav__list"><a href="#skill" class="footer__gnav__link">スキル紹介</a></li>
+          <li class="footer__gnav__list"><a href="#contact" class="footer__gnav__link">問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
     <p class="footer__copy"><small class="footer__small">sakashita hitomi</small></p>
   </footer>
 
 
-<!-- --swiper本体-- -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- --swiper本体-- -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="js/swiper.js"></script>
