@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- ↓ レスポンシブ対応に必須の記述 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ↓ 電話番号を入力した際に自動的リンクを切る-->
+  <!-- 電話番号をクリックした時、自動電話機能を入れたい場合a要素で指定 -->
+  <meta name="format-detection" content="telephone=no">
+  <!-- ↓ 検索結果画面で表示される文言 -->
+  <meta name="description" content="">
+  <!-- ↓ 検索ワードをカンマ区切りでcontent内に指定-->
+  <meta name="keywords" content="web,札幌,求職者支援訓練,">
+  <!-- ↓ 検索にヒットしないようにする(noindex) リンクとの関係性を切る（nofollow）-->
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- twitter -->
+  <!-- ↓ twitterでリンクに画像を表示 -->
+  <meta name="twitter:card" content="summary">
+  <!-- ↓ @ユーザ名を入力（任意 -->
+  <meta name="twitter:site" content="@username">
+  <!-- ↓ そのページの概要を記述する（任意 -->
+  <meta name="twitter:description" content="">
+  <!-- ↓ そのページのタイトルを入力※短くする-->
+  <meta name="twitter:title" content="">
+  <!-- ↓ ページのコンテンツを表す任意の画像 -->
+  <!-- 画像サイズは144px～4096pxまで。サイズは5MBまで。gif・jpg・png・webpのみ対応(アニメーションは非対応) -->
+  <meta name="twitter:image" content="絶対パス">
+
+  <!-- twitter以外のサービスとの連携 -->
+  <!-- ↓ このページのタイトルを記入 -->
+  <meta property="og:title" content="">
+  <!-- ↓ 通常のサイトはcontent="website" -->
+  <meta property="og:type" content="website">
+  <!-- ↓ ページのurlを記入 -->
+  <meta property="og:url" content="絶対パス">
+  <!-- ↓ ページの概要説明を記入 -->
+  <meta property="og:description" content="">
+  <!-- ↓ サイト名 -->
+  <meta property="og:site_name" content="">
+  <!-- ↓ ページリンクを貼り付けた際の画像 -->
+  <meta property="og:image" content="絶対パス">
+
+  <!-- ↓ ファビコン設定 -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- ↓ iOSホーム画面にリンクを置いた際に表示されるアイコン -->
+  <!-- 画像ファイルの名前は「apple-touch-icon.png」 -->
+  <link rel="apple-touch-icon" sizes="180x180" href="画像への相対パス">
+  <link rel="icon" sizes="192x192" href="images/apple-touch-icon.png">
+
+  <title>サイトタイトル</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&family=Noto+Sans+JP:wght@100..900&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__ttl"><a class="header__ttl__link" href="#top">SAKASHITA HITOMI<br>PORTFOLIO</a></h1>
+    <div id="header__btn" class="header__btn">
+      <span id="header__btn__top" class="header__btn__top"></span>
+      <span id="header__btn__middle" class="header__btn__middle"></span>
+      <span id="header__btn__bottom" class="header__btn__bottom"></span>
+    </div>
+    <nav id="gnav" class="gnav gnav2">
+      <ul class="gnav__nav gnav2__nav">
+        <li class="gnav__list gnav2__list"><a href="#top" class="gnav__link gnav2__link">トップページ</a></li>
+        <li class="gnav__list gnav2__list"><a href="#about" class="gnav__link gnav2__link">自己紹介</a></li>
+        <li class="gnav__list gnav2__list"><a href="#work" class="gnav__link gnav2__link">作品紹介</a></li>
+        <li class="gnav__list gnav2__list"><a href="#skill" class="gnav__link gnav2__link">スキル紹介</a></li>
+        <li class="gnav__list gnav2__list"><a href="#contact" class="gnav__link gnav2__link">問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+
+</main>
+  <footer class="footer">
+    <p class="footer__home"><a href="#top" class="footer__home__link">SAKASHITA HITOMI (坂下 瞳)</a></p>
+    <div class="footer__box">
+      <nav class="footer__gnav">
+        <ul class="footer__gnav__nav">
+          <li class="footer__gnav__list"><a href="#about" class="footer__gnav__link">自己紹介　</a></li>
+          <div class="footer__gnav__box">
+            <li class="footer__gnav__list"><a href="#work" class="footer__gnav__link">作品紹介　</a></li>
+            <li class="footer__bnav__lists"><a href="#" class="footer__gnav__links">ーサイト紹介</a></li>
+            <li class="footer__bnav__lists"><a href="#" class="footer__gnav__links">ーバナー紹介</a></li>
+            <li class="footer__bnav__lists"><a href="#" class="footer__gnav__links">ーサムネイル紹介</a></li>
+          </div>
+          <li class="footer__gnav__list"><a href="#skill" class="footer__gnav__link">スキル紹介</a></li>
+          <li class="footer__gnav__list"><a href="#contact" class="footer__gnav__link">問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer__copy"><small class="footer__small">sakashita hitomi</small></p>
+  </footer>
+
+
+  <!-- --swiper本体-- -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/function.js"></script>
+</body>
+
+</html>

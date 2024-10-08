@@ -16,6 +16,12 @@
     @media screen and (min-width: 768px) {
         margin: 50px auto;
     }
+    @media screen and (min-width: 1024px) {
+      width: 480px;
+      height: 82px;
+      font-size: 20px;
+      letter-spacing: 0.5em;
+    }
 
     &::before {
         content: "";
@@ -25,6 +31,12 @@
         width: 45px;
         height: 45px;
         background: url(../images/btn.svg) center center / cover;
+        @media screen and (min-width: 1024px) {
+            top: 5px;
+            left: 10px;
+          width: 72px;
+          height: 72px;
+        }
     }
 
     &__link {
@@ -33,6 +45,9 @@
         text-decoration: none;
         text-align: center;
         color: #fff;
+        @media screen and (min-width: 1024px) {
+          padding: 21px 50px;
+        }
     }
 
     &:hover {
@@ -48,7 +63,9 @@
 
 .mv {
     margin-bottom: 120px;
-
+@media screen and (min-width: 768px) {
+  margin-bottom: 200px;
+}
     @media screen and (min-width: 1024px) {
         margin-bottom: 170px;
     }
@@ -72,22 +89,21 @@
 
     &__ttl {
         margin: 0 7%;
-        font-size: 9vw;
+        // font-size: 9vw;
         font-family: $mohave;
         color: $orange;
-
-        @media screen and (min-width: 1024px) {
-            font-size: 132px;
-        }
+font-size: clamp(2.313rem, 1.235rem + 4.6vw, 6.75rem);
+        // @media screen and (min-width: 1024px) {
+        //     font-size: 132px;
+        // }
     }
 
     &__txt {
         margin: 0 7%;
-        font-size: 4vw;
+        font-size: clamp(0.875rem, 0.511rem + 1.55vw, 2.375rem);
         font-weight: bold;
 
         @media screen and (min-width: 1024px) {
-            font-size: 38px;
             margin-bottom: 160px;
         }
     }
@@ -180,11 +196,12 @@
 
         @media screen and (min-width: 768px) {
             font-size: 15px;
+            margin: 16px;
         }
 
         @media screen and (min-width: 1024px) {
             font-size: 20px;
-            margin: 100px;
+            margin: 24px;
         }
 
         &::before {
@@ -319,6 +336,7 @@
 
         @media screen and (min-width: 1024px) {
             font-size: 20px;
+            margin-bottom: 15px;
         }
 
         &::before {
@@ -393,7 +411,7 @@
 
         @media screen and (min-width: 1024px) {
             line-height: 2;
-            margin: 140px 0 0 140px;
+            margin: 98px 140px 0 140px;
         }
     }
 
@@ -408,7 +426,7 @@
 
         @media screen and (min-width: 1024px) {
             font-size: 28px;
-            margin-bottom: 50px;
+            margin-bottom: 35px;
         }
 
         &__sub {
@@ -422,7 +440,7 @@
 
             @media screen and (min-width: 1024px) {
                 font-size: 16px;
-                margin-bottom: 40px;
+                margin-bottom: 25px;
             }
         }
     }
@@ -496,10 +514,14 @@
         @media screen and (min-width: 768px) {
             display: flex;
             width: 100%;
+            &:nth-of-type(2) {
+                flex-direction: row-reverse;
+            }
         }
 
         @media screen and (min-width: 1024px) {
             margin: 0 auto 280px;
+            width: 75%;
         }
     }
 
@@ -534,7 +556,7 @@
             }
 
             @media screen and (min-width: 1024px) {
-                right: -150%;
+                right: -216%;
                 width: 583px;
                 height: 477px;
 
@@ -558,6 +580,24 @@
             @media screen and (min-width: 1024px) {
                 width: 311px;
                 height: 222px;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            &::after {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 163px;
+                right: 567px;
+                width: 387px;
+                height: 316px;
+                @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+                @media screen and (min-width: 1024px) {
+                  top: 51%;
+                  right: 202%;
+                  width: 500px;
+                  height: 400px;
+                }
             }
         }
 
@@ -633,10 +673,17 @@
         &__ttl {
             font-size: 9px;
             margin-bottom: 9px;
+            @media screen and (min-width: 1024px) {
+              font-size: 12px;
+              margin: 30px 0;
+            }
         }
 
         &__txt {
             font-size: 14px;
+            @media screen and (min-width: 1024px) {
+              font-size: 16px;
+            }
         }
     }
 }
@@ -647,7 +694,7 @@
 
 .swiper-work {
     width: 100%;
-    height: 300px;
+    // height: 300px;
 }
 
 .skill {
@@ -665,6 +712,7 @@
         }
         @media screen and (min-width: 1024px) {
           font-size: 20px;
+          margin-bottom: 18px;
         }
     }
 
@@ -694,12 +742,12 @@
         @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
-            width: 600px;
+            justify-content: center;
+            width: 90%;
             margin: 0 auto;
         }
         @media screen and (min-width: 1024px) {
           width: 60%;
-          justify-content: space-between;
         }
     }
 
@@ -720,6 +768,9 @@
     &__box1 {
         padding: 30px;
         @include maru(42% 58% 55% 45% / 59% 36% 64% 41%);
+        @media screen and (min-width: 768px) {
+          margin-right: 40px;
+        }
 
         &::after {
             position: absolute;
@@ -791,9 +842,13 @@
         text-align: center;
         color: #fff;
         background: url(../images/Frame.jpg) center center / cover;
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 768px) {
             background: url(../images/Frame3.jpg) center center / cover;
+          height: 320px;
+        }
+        @media screen and (min-width: 1024px) {
             margin-bottom: 80px;
+            height: 583px;
           
         }
 
@@ -808,6 +863,7 @@
                 font-size: 20px;
             }
             @media screen and (min-width: 1024px) {
+                padding-top: 130px;
               font-size: 24px;
             }
 
@@ -852,6 +908,10 @@
 
         @media screen and (min-width: 768px) {
             font-size: 15px;
+        }
+        @media screen and (min-width: 1024px) {
+          font-size: 20px;
+          margin-bottom: 20px;
         }
     }
 

@@ -54,33 +54,34 @@
 
   <title>サイトタイトル</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&family=Noto+Sans+JP:wght@100..900&display=swap"
-    rel="stylesheet">
+  href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&family=Noto+Sans+JP:wght@100..900&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
   <header class="header">
-    <h1 class="header__ttl">SAKASHITA HITOMI<br>PORTFOLIO</h1>
+    <h1 class="header__ttl"><a class="header__ttl__link" href="#top">SAKASHITA HITOMI<br>PORTFOLIO</a></h1>
     <div id="header__btn" class="header__btn">
       <span id="header__btn__top" class="header__btn__top"></span>
       <span id="header__btn__middle" class="header__btn__middle"></span>
       <span id="header__btn__bottom" class="header__btn__bottom"></span>
     </div>
-    <nav id="gnav" class="gnav">
-      <ul class="gnav__nav">
-        <li class="gnav__list"><a href="#about" class="gnav__link">自己紹介</a></li>
-        <li class="gnav__list"><a href="#work" class="gnav__link">作品紹介</a></li>
-        <li class="gnav__list"><a href="#skill" class="gnav__link">スキル紹介</a></li>
-        <li class="gnav__list"><a href="#contact" class="gnav__link">問い合わせ</a></li>
+    <nav id="gnav" class="gnav gnav2">
+      <ul class="gnav__nav gnav2__nav">
+        <li class="gnav__list gnav2__list"><a href="#top" class="gnav__link gnav2__link">トップページ</a></li>
+        <li class="gnav__list gnav2__list"><a href="#about" class="gnav__link gnav2__link">自己紹介</a></li>
+        <li class="gnav__list gnav2__list"><a href="#work" class="gnav__link gnav2__link">作品紹介</a></li>
+        <li class="gnav__list gnav2__list"><a href="#skill" class="gnav__link gnav2__link">スキル紹介</a></li>
+        <li class="gnav__list gnav2__list"><a href="#contact" class="gnav__link gnav2__link">問い合わせ</a></li>
       </ul>
     </nav>
   </header>
-  <main class="main">
+  <main id="top" class="main">
     <div class="mv">
       <div class="mv__img">
         <div class="mv__box">
@@ -92,7 +93,7 @@
 
     <section id="about" class="about">
       <h2 class="about__ttl">[SAKASHITA PROFILE]</h2>
-      <p class="about__arch"><img src="images/about.png" alt="自己紹介" class="about__archimg"></p>
+      <p class="about__arch"><img src="images/about.jpg" alt="自己紹介" class="about__archimg"></p>
       <div class="about__con">
         <p class="about__txt">
           コミュニケーション力を活かして<br>行動、成長していく
@@ -223,7 +224,7 @@
     </section>
     <section id="contact" class="contact">
       <p class="contact__ttl">[CONTACT]</p>
-      <p class="contact__arch"><img src="images/contact.png" alt="お問い合わせ" class="contact__archimg"></p>
+      <p class="contact__arch"><img src="images/contact.jpg" alt="お問い合わせ" class="contact__archimg"></p>
       <div class="contact__con">
         <form
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdxR_SsY9GmNwNqSHA8kA0sXIEOU8bwifuBGnAvNCSWv5rLyQ/formResponse"
@@ -250,7 +251,7 @@
     </section>
   </main>
   <footer class="footer">
-    <p class="footer__home"><a href="top" class="footer__home__link">SAKASHITA HITOMI</a></p>
+    <p class="footer__home"><a href="#top" class="footer__home__link">SAKASHITA HITOMI (坂下 瞳)</a></p>
     <div class="footer__box">
       <nav class="footer__gnav">
         <ul class="footer__gnav__nav">

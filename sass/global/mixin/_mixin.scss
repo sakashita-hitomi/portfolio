@@ -16,6 +16,9 @@
     background: $value;
     border-radius: 32px;
     text-align: center;
+    @media screen and (min-width: 1024px) {
+      height: 416px;
+    }
     &::after {
         content: $txt;
         position: absolute;
@@ -25,15 +28,26 @@
         height: 60px;
         
         padding-top: 20px;
-        border: 1px solid $lightgray;
+        border: 1px solid #a0a0a0;
         border-radius: 50%;
         background: #fff;
+        @media screen and (min-width: 1024px) {
+          top: -13px;
+          right: -11px;
+          width: 80px;
+          height: 80px;
+          padding-top: 27px;
+        }
     }
 }
-@mixin work-img {
+@mixin work-img{
     display: block;
     width: 227px;
     height: 134px;
     margin: 0 auto 10px;
     border-radius: 70px;
+    @media screen and (min-width: 1024px) {
+      width: 394px;
+      height: 222px;
+    }
 }

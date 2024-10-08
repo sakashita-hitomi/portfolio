@@ -4,14 +4,23 @@ const swiperWork = new Swiper('.swiper-work',{
     effect: 'slide',
     slidesPerView: 1.3,
     centeredSlides: true,
-    spaceBetween: 10,
+    spaceBetween: 20,
     slideActiveClass: 'swiper-work__Active',
     speed: 1000,
     autoplay: {
         delay: 3000,
         disableOnInterraction: true,
-        // @media screen and (min-width: 768px){
-        //     slidesPerView:2.3,
-        // }
-    }
+    },
+    breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        }
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 3.2,
+          spaceBetween: 50,
+        }
+      },
 });
