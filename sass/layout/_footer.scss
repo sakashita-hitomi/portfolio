@@ -20,6 +20,7 @@
         z-index: -1;
         @include maru(40% 58% 55% 0% / 57% 100% 10% 39%);
         @media screen and (min-width: 1024px) {
+          left: -206px;
           height: 470px;
         }
     }

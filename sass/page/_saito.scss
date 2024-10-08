@@ -1,1 +1,44 @@
 @use "../global" as *;
+
+.s-k {
+    margin: 150px 7% 50px;
+
+    &__ttl {
+        position: relative;
+        margin: 0 0 7px 30px;
+        font-size: 9px;
+        font-weight: normal;
+        font-family: $mohave;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 4px;
+            left: -28px;
+            width: 15px;
+            height: 1px;
+            background: #000;
+        }
+
+        &__box {
+            width: 100%;
+            &::after {
+                position: absolute;
+                content: "";
+                top: 77px;
+                right: 4px;
+                width: 97%;
+                height: 73px;
+                background: url(../images/s-k.jpg) center center / cover;
+            }
+        }
+
+        &__txt {
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        &__sub {
+            font-size: 14px;
+        }
+    }
+}
