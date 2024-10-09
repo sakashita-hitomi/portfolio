@@ -14,6 +14,10 @@
         font-size: 9px;
         font-weight: normal;
         font-family: $mohave;
+        @media screen and (min-width: 768px) {
+          font-size: 15px;
+          margin: 0 0 7px 83px;
+        }
 
         &::before {
             position: absolute;
@@ -37,6 +41,12 @@
                 width: 97%;
                 height: 73px;
                 background: url(../images/s-k.jpg) center center / cover;
+                @media screen and (min-width: 768px) {
+                    
+                    right: -15px;
+                  height: 10%;
+                  width: 66%;
+                }
             }
         }
 
@@ -44,6 +54,9 @@
             margin-bottom: 10px;
             font-size: 16px;
             font-weight: bold;
+            @media screen and (min-width: 768px) {
+              font-size: 26px;
+            }
         }
 
         &__sub {
@@ -53,6 +66,16 @@
 
     &__pic {
         margin-bottom: 20px;
+        @media screen and (min-width: 768px) {
+          width: 97%;
+          margin-bottom: 80px;
+        }
+    }
+    &__img {
+        @media screen and (min-width: 768px) {
+            border-radius: 0 50px 0 0;
+          
+        }
     }
 }
 
@@ -60,7 +83,9 @@
     &__con {
         position: relative;
         padding: 6px 0 50px;
-
+        @media screen and (min-width: 768px) {
+            margin: 0 auto 110px;
+        }
         &::before {
             position: absolute;
             content: "";
@@ -70,6 +95,11 @@
             height: 95%;
             z-index: -1;
             @include maru(59% 74% 67% 60% / 42% 56% 40% 36%);
+            @media screen and (min-width: 768px) {
+              left: -32px;
+              width: 120%;
+              height: 100%;
+            }
         }
 
         &__ttl {
@@ -88,10 +118,11 @@
                 position: absolute;
                 content: "";
                 top: 19px;
-                right: 189px;
+                right: 50%;
                 width: 1px;
                 height: 15px;
                 background: #fff;
+                
             }
         }
 
@@ -108,12 +139,16 @@
                 width: 50px;
                 height: 1px;
                 background: #fff;
+                @media screen and (min-width: 768px) {
+                    bottom: -71%;
+                  right: 47%;
+                }
             }
         }
     }
 
     &__con2 {
-        margin: 0 7%;
+        margin: 0 9%;
         color: #fff;
         letter-spacing: 0.1em;
         line-height: 1.2em;
@@ -122,11 +157,23 @@
 
     &__box {
         margin-bottom: 60px;
+        @media screen and (min-width: 768px) {
+          display: flex;
+          justify-content: space-between;
+          margin: 70px auto;
+          width: 100%;
+          &:nth-of-type(odd) {
+            flex-direction: row-reverse;
+        }  
+        }
         &__pic {
             position: relative;
             width: 305px;
             height: 172px;
             margin-bottom: 10px;
+            @media screen and (min-width: 768px) {
+              width: 50%;
+            }
             &::after {
                 position: absolute;
                 content: "";
@@ -146,7 +193,11 @@
             object-fit: cover;
 
         }
-        &__txt {}
+        &__txt {
+            @media screen and (min-width: 768px) {
+              width: 43%;
+            }
+        }
 
         &__ttl {
             position: relative;
@@ -194,6 +245,9 @@
         margin: 0 auto;
         padding: 6px 0 50px;
         color: #000;
+        @media screen and (min-width: 768px) {
+            margin: 0 auto 110px;
+        }
 
         &::before {
             position: absolute;
@@ -205,6 +259,12 @@
             z-index: -1;
             @include maru(59% 74% 67% 60% / 42% 56% 40% 36%);
             background: $lightgray;
+            @media screen and (min-width: 768px) {
+                left: -32px;
+                width: 120%;
+                height: 100%;
+            }
+            
         }
 
         &__ttl {
@@ -255,11 +315,23 @@
 
     &__box {
         margin-bottom: 60px;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            margin: 70px auto;
+            width: 100%;
+            &:nth-of-type(odd) {
+              flex-direction: row-reverse;
+          }  
+          }
         &__pic {
             position: relative;
             width: 305px;
             height: 172px;
             margin-bottom: 10px;
+            @media screen and (min-width: 768px) {
+                width: 50%;
+              }
             &::after {
                 position: absolute;
                 content: "";
@@ -279,7 +351,11 @@
             object-fit: cover;
 
         }
-        &__txt {}
+        &__txt {
+            @media screen and (min-width: 768px) {
+                width: 43%;
+              }
+        }
 
         &__ttl {
             position: relative;
