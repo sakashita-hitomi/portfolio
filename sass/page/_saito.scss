@@ -1,14 +1,20 @@
 @use "../global" as *;
-
-.s-k {
-    margin: 150px 7% 50px;
-
+.icon {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+}
+.s_k {
+    margin: 150px 0 50px;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
     &__ttl {
         position: relative;
         margin: 0 0 7px 30px;
         font-size: 9px;
         font-weight: normal;
         font-family: $mohave;
+
         &::before {
             position: absolute;
             content: "";
@@ -20,7 +26,9 @@
         }
 
         &__box {
-            width: 100%;
+            // width: 100%;
+            margin: 0 7% 30px;
+
             &::after {
                 position: absolute;
                 content: "";
@@ -37,8 +45,280 @@
             font-size: 16px;
             font-weight: bold;
         }
+
         &__sub {
             font-size: 14px;
+        }
+    }
+
+    &__pic {
+        margin-bottom: 20px;
+    }
+}
+
+.saito {
+    &__con {
+        position: relative;
+        padding: 6px 0 50px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: -150px;
+            width: 200%;
+            height: 95%;
+            z-index: -1;
+            @include maru(59% 74% 67% 60% / 42% 56% 40% 36%);
+        }
+
+        &__ttl {
+            padding-top: 30px;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #fff;
+        }
+
+        &__txt {
+            position: relative;
+            font-size: 13px;
+            margin-bottom: 30px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                top: 19px;
+                right: 189px;
+                width: 1px;
+                height: 15px;
+                background: #fff;
+            }
+        }
+
+        &__sub {
+            position: relative;
+            font-size: 15px;
+            font-weight: bold;
+
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: -6px;
+                right: 164px;
+                width: 50px;
+                height: 1px;
+                background: #fff;
+            }
+        }
+    }
+
+    &__con2 {
+        margin: 0 7%;
+        color: #fff;
+        letter-spacing: 0.1em;
+        line-height: 1.2em;
+        padding-bottom: 50px;
+    }
+
+    &__box {
+        margin-bottom: 60px;
+        &__pic {
+            position: relative;
+            width: 305px;
+            height: 172px;
+            margin-bottom: 10px;
+            &::after {
+                position: absolute;
+                content: "";
+                top: -10px;
+                right: -10px;
+                rotate: 4deg;
+                width: 305px;
+                height: 172px;
+                background: $darkorange;
+                z-index: -1;
+
+            }
+        }
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+        &__txt {}
+
+        &__ttl {
+            position: relative;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 0 8px 10%;
+            &::before {
+                position: absolute;
+                content: "";
+                top: -8px;
+                left: -33px;
+                width: 28px;
+                height: 28px;
+                background: url(../images/no1.svg) center center / cover;
+            }
+        }
+
+        &__sub {
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+        &__btn {
+            position: relative;
+            text-align: right;
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                background: url(../images/btn.svg) center center / cover;
+            }
+        }
+        &__link {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+.kanp {
+    &__con {
+        position: relative;
+        margin: 0 auto;
+        padding: 6px 0 50px;
+        color: #000;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: -150px;
+            width: 200%;
+            height: 95%;
+            z-index: -1;
+            @include maru(59% 74% 67% 60% / 42% 56% 40% 36%);
+            background: $lightgray;
+        }
+
+        &__ttl {
+            padding-top: 30px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        &__txt {
+            position: relative;
+            font-size: 13px;
+            margin-bottom: 30px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                top: 19px;
+                right: 189px;
+                width: 1px;
+                height: 15px;
+                background: #000;
+            }
+        }
+
+        &__sub {
+            position: relative;
+            font-size: 15px;
+            font-weight: bold;
+
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: -6px;
+                right: 164px;
+                width: 50px;
+                height: 1px;
+                background: #000;
+            }
+        }
+    }
+
+    &__con2 {
+        margin: 0 7%;
+        letter-spacing: 0.1em;
+        line-height: 1.2em;
+        padding-bottom: 50px;
+    }
+
+    &__box {
+        margin-bottom: 60px;
+        &__pic {
+            position: relative;
+            width: 305px;
+            height: 172px;
+            margin-bottom: 10px;
+            &::after {
+                position: absolute;
+                content: "";
+                top: -10px;
+                right: -10px;
+                rotate: 4deg;
+                width: 305px;
+                height: 172px;
+                background: $orange;
+                z-index: -1;
+
+            }
+        }
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+        &__txt {}
+
+        &__ttl {
+            position: relative;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 0 8px 10%;
+            &::before {
+                position: absolute;
+                content: "";
+                top: -8px;
+                left: -33px;
+                width: 28px;
+                height: 28px;
+                background: url(../images/no1.svg) center center / cover;
+                color: #000;
+            }
+        }
+
+        &__sub {
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+        &__btn {
+            position: relative;
+            text-align: right;
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                
+                background: url(../images/btn.svg) center center / cover;
+            }
+        }
+        &__link {
+            text-decoration: none;
+            color: #000;
         }
     }
 }

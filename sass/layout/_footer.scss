@@ -19,6 +19,9 @@
         height: 300px;
         z-index: -1;
         @include maru(40% 58% 55% 0% / 57% 100% 10% 39%);
+        @media screen and (min-width: 768px) {
+          height: 360px;
+        }
         @media screen and (min-width: 1024px) {
           left: -206px;
           height: 470px;
@@ -26,12 +29,14 @@
     }
 
     &__home {
+      // width: 390px;
         position: relative;
-        margin: 0 7% 30px;
+        // margin: 0 7% 30px;
 
         @media screen and (min-width: 768px) {
-            width: 359px;
+            // width: 439px;
             font-size: 20px;
+            margin-left: 11%;
         }
         @media screen and (min-width: 1024px) {
           font-size: 26px;
@@ -41,7 +46,7 @@
         &::after {
             position: absolute;
             content: 'HOME';
-            top: 18px;
+            top: 5px;
             right: 78px;
             width: 30px;
             height: 30px;
@@ -64,7 +69,7 @@
 
         &__link {
             display: block;
-            padding: 21px 60px 10px;
+            padding: 10px 44px 10px;
             text-decoration: none;
             color: #fff;
             @media screen and (min-width: 1024px) {
@@ -86,7 +91,7 @@
         &__nav {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
 
             @media screen and (min-width: 768px) {
                 width: 84%;
@@ -137,6 +142,7 @@
         }
 
         &__links {
+          font-size: 9px;
             display: block;
             padding: 10px 36px 5px 36px;
             text-decoration: none;
