@@ -1,0 +1,111 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+
+  /* ===============================================
+  ハンバーガーボタンのスタイリング
+  =============================================== */
+  input[type="checkbox"] {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+
+
+  .hamburger {
+    display: block;
+    width: 78px;
+    height: 78px;
+    position: relative;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .hamburger::after {
+    width: 78px;
+    height: 78px;
+    content: "";
+    background: $red;
+    z-index: 2;
+  }
+
+  .hamburger::before {
+    content: "MENU";
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+    z-index: 3;
+
+  }
+
+  .hamburger span,
+  .hamburger span::before,
+  .hamburger span::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.5s;
+    bottom: 45px;
+    z-index: 3;
+  }
+  .hamburger span::before {
+    top: -10px;
+  }
+  .hamburger span::after {
+    bottom: -10px;
+  }
+  input[type="checkbox"]:checked + .hamburger span {
+    background-color: transparent;
+  }
+  input[type="checkbox"]:checked + .hamburger span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  input[type="checkbox"]:checked + .hamburger span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* ===============================================
+  メニューのスタイリング
+  =============================================== */
+  .gnav {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    top: 78px;
+    right: -120%;
+    background-color: #ffffffc1;
+    color: $blue;
+    padding: 50px 0;
+    transition: all 0.5s;
+    z-index: 100;
+  }
+
+  .gnav__link {
+    display: block;
+    font-size: 20px;
+    padding: 20px 0 20px 50px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+  }
+  .gnav__link:hover {
+    color: $red;
+    text-decoration: underline;
+    // background-color: #f64c4c5f;
+  }
+  input[type="checkbox"]:checked ~ .gnav {
+    right: 0;
+
+  }

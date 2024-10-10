@@ -1,0 +1,75 @@
+
+@charset "utf-8";
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+// baseファイルはサイトの基本的な設定などを行います
+
+.wrapper {
+    font-family: "Noto Sans JP", sans-serif;
+    overflow: hidden;
+}
+
+.sec {
+    //    文字の設定
+        &__ttl {
+            padding: 8px 16px;
+            background: #fff;
+            font-size: 64px;
+            font-weight: bold;
+            letter-spacing: .1em;
+        }
+
+        &__subttl {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        &__catch {
+            font-size: 34px;
+            font-weight: bold;
+
+        }
+
+        &__catchtxt {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 2em;
+        }
+
+        &__more {
+            width: 235px;
+            height: 50px;
+            margin: 0 auto;
+            border-radius: 30px;
+            background: $blue;
+            border: 1px solid #000;
+        }
+
+        &__more:hover {
+            background: #fff;
+        }
+
+        &__link {
+            display: block;
+            color: #fff;
+            padding: 17px;
+            text-decoration: none;
+        }
+
+        &__link:hover {
+            color: $blue;
+        }
+
+    }
+
+    .red {
+        color: $red;
+    }
+
+    .blue {
+        color: $blue;
+    }
+

@@ -1,0 +1,409 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+body {
+    font-family: "BIZ UDPGothic", sans-serif;
+    font-weight: bold;
+    color: #102c52;
+}
+
+.mv {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/cafeazito_s_02.jpg) center center / cover;
+    border-radius: 0 0 300px 0;
+}
+
+.welcome {
+    width: 100%;
+
+    &__wrap {
+        width: 800px;
+        margin: auto;
+    }
+
+    &__box1 {
+        margin: 148px 0 100px;
+        text-align: center;
+    }
+
+    &__ttl {
+        font-size: 20px;
+        margin-bottom: 26px;
+        letter-spacing: 0.2em;
+    }
+
+    &__txt {
+        font-size: 65px;
+        font-family: "Libre Baskerville", serif;
+    }
+
+    &__box2 {
+        position: relative;
+        margin: 0 auto 70px 0;
+        letter-spacing: 0.2em;
+        line-height: 2;
+
+        &::before {
+            content: "";
+            top: -270px;
+            left: -590px;
+            background: url(../images/w1.jpg) center center / cover;
+            position: absolute;
+            width: 470px;
+            height: 470px;
+        }
+
+        &::after {
+            content: "";
+            top: -20px;
+            right: -480px;
+            background: url(../images/w2.jpg) center center / cover;
+            position: absolute;
+            width: 310px;
+            height: 310px;
+        }
+    }
+
+    &__txt2 {
+        font-size: 24px;
+        color: $blue;
+    }
+
+    &__box3 {
+        width: 500px;
+        margin: 0 0 279px auto;
+        letter-spacing: 0.2em;
+        line-height: 2.5;
+    }
+
+    &__txt3 {
+        font-size: 16px;
+        color: $blue;
+    }
+}
+
+.extra {
+    &__bg {
+        position: relative;
+        background: url(../images/e1.jpg) center center / cover;
+        height: 100vh;
+
+        &__wrap {
+            position: absolute;
+            bottom: 0;
+            right: 19%;
+            display: flex;
+            justify-content: space-between;
+            width: 825px;
+            // margin: auto auto 0;
+        }
+
+        &__ttl {
+            padding-top: 45px;
+            font-size: 44px;
+            font-family: "Libre Baskerville", serif;
+        }
+
+        &__box {
+            padding-bottom: 20px;
+        }
+
+        &__txt {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        &__btn {
+            display: block;
+            margin-left: 165px;
+            @include arrow(4px, 25px)
+        }
+
+        &__link {
+            text-decoration: none;
+            padding: 10px 15px;
+            color: $light;
+        }
+    }
+
+    &__box {
+        transform: translateY(-40px);
+        // position: absolute;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 135px;
+    }
+
+    &__pic1 {
+        width: 335px;
+        height: 564px;
+    }
+
+    &__img1 {
+        border-radius: 0 210px 0 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__pic2 {
+        width: 240px;
+        height: 404px;
+        align-self: center;
+        margin-top: 90px;
+    }
+
+    &__img2 {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    &__pic3 {
+        width: 318px;
+        height: 438px;
+        align-self: flex-end;
+    }
+
+    &__img3 {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    &__pic4 {
+        width: 429px;
+        height: 652px;
+        margin-top: 65px;
+    }
+
+    &__img4 {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    &__pic5 {
+        width: 318px;
+        height: 458px;
+    }
+
+    &__img5 {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+.menu {
+    overflow: hidden;
+    padding-top: 72px;
+    &__con {
+        display: flex;
+        justify-content: space-between;
+        width: 71%;
+        margin-bottom: 133px;
+        letter-spacing: 0.1em;
+    }
+
+    &__con1 {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -70px;
+            left: -222px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: $navy;
+            z-index: -1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -45px;
+            right: -555px;
+            width: 90px;
+            height: 510px;
+            border-radius: 100px 0 0 0;
+            background: #E7EEF6;
+            z-index: -1;
+        }
+    }
+
+    &__con2 {
+        position: relative;
+        margin: 0 0 133px auto;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -70px;
+            right: -200px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: $navy;
+            z-index: -1;
+        }
+    }
+
+    &__con3 {
+        position: relative;
+        width: 85%;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -70px;
+            left: -222px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: $navy;
+            z-index: -1;
+        }
+    }
+
+    &__box {
+        padding-top: 130px;
+    }
+
+    &__pic {
+        width: 780px;
+        height: 620px;
+    }
+
+    &__img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__ttl {
+        font-size: 40px;
+        font-family: "Libre Baskerville", serif;
+    }
+
+    &__sub {
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+
+    &__txt {
+        font-size: 15px;
+        margin-bottom: 31px;
+        line-height: 2;
+    }
+
+    &__btn1 {
+        @include arrow(4px, 45px);
+    }
+    &__btn2 {
+        @include arrow(4px, 286px);
+    }
+    &__btn3 {
+        @include arrow(4px, 348px);
+    }
+
+    &__link {
+        padding: 10px 15px;
+        text-decoration: none;
+        color: $light;
+    }
+}
+
+.news {
+
+    &__bg {
+        width: 100%;
+        height: 100vh;
+        background: url(../images/newsbg.jpg) center center / cover;
+    }
+
+    &__wrap {
+        transform: translateY(-252px);
+        background: #fff;
+        border-radius: 335px 0 0 0;
+    }
+    
+    &__ttl {
+        text-align: center;
+        padding-top: 115px;
+        font-size: 40px;
+        font-family: "Libre Baskerville", serif;
+    }
+    
+    &__sub {
+        text-align: center;
+        margin-bottom: 80px;
+        font-size: 14px;
+    }
+
+    &__con {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__box {
+        width: 20%;
+
+        &__pic {
+            margin-bottom: 20px;
+        }
+
+        &__img {
+            height: 100%;
+            object-fit: cover;
+        }
+        &__txt {
+            line-height: 2;
+        }
+    }
+&__btn {
+    text-align: center;
+    @include arrow(4px, 820px);
+}
+&__link {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: $light;
+}
+}
+
+.access {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+   
+&__box {
+    transform: translateY(-30px);
+    margin-bottom: 167px;
+}
+
+    &__ttl {
+        font-size: 40px;
+        letter-spacing: .1em;
+        font-family: "Libre Baskerville", serif;
+    }
+    &__sub {
+        font-size: 14px;
+        letter-spacing: .1em;
+        margin-bottom: 30px;
+    }
+    &__txt {
+        letter-spacing: .1em;
+        line-height: 2;
+        margin-bottom: 15px;
+    }
+    &__maplink {
+        text-decoration: none;
+        color: $light;
+    }
+}

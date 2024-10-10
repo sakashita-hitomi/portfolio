@@ -1,0 +1,214 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+
+.footer {
+    // 赤い箱
+
+    .exbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1920px;
+        height: 431px;
+        background: $red;
+        position: relative;
+
+        &__link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .exbox2 {
+        &__txt {
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 1.9;
+            letter-spacing: .2em;
+            color: $white;
+            font-size: 64px;
+            font-weight: bold;
+        }
+
+        &__yellow {
+            color: $yellow;
+        }
+
+        &__txtsub {
+            text-align: center;
+            line-height: 2.2;
+            letter-spacing: .05em;
+            color: $white;
+        }
+    }
+
+
+
+
+    // フッター
+
+
+    &__icon {
+        margin-bottom: 10px;
+        padding: 118px 0 0 240px;
+    }
+
+    &__container {
+
+        margin-top: 24px;
+
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 240px 40px;
+    }
+
+    &__subtxt {
+        padding: 20px 0;
+    }
+
+    &__tel {
+        margin: 0 0 3px 0;
+        position: relative;
+        padding: 20px 20px 20px 30px;
+
+        &::before {
+            content: "";
+            background: url(../images/phone.png) no-repeat;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 20px;
+            left: 0;
+        }
+    }
+
+
+    &__link {
+        padding: 20px 20px 20px 30px;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+
+        &::before {
+            content: "";
+            background: url(../images/fnav_mail.png) no-repeat;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 18px;
+            left: 0;
+        }
+
+
+        &Map {
+            &::before {
+                background: url(../images/map.png)
+            }
+
+        }
+    }
+
+    &__link:hover {
+        color: $red;
+        text-decoration: underline;
+    }
+
+    &__subbox2 {
+        display: block;
+        padding-top: 76px;
+        text-decoration: none;
+    }
+
+    &__privacy {
+        padding-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            color: $red;
+            text-decoration: underline;
+        }
+
+    }
+
+    address span {
+
+        margin-bottom: 20px;
+        display: block;
+    }
+
+
+    .fnav {
+
+
+
+        &__link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            padding: 20px;
+        }
+
+        &__link:hover {
+            color: $red;
+            text-decoration: underline;
+        }
+    }
+
+
+
+    .social {
+        &__list {
+            display: flex;
+            justify-content: center;
+            background-color: $blue;
+            color: $white;
+            font-size: 24px;
+            line-height: 3em;
+            align-items: center;
+            letter-spacing: .2em;
+            padding: 0 28px;
+
+        }
+
+        &__list:hover {
+            opacity: 0.7;
+        }
+
+
+        &__red {
+            background-color: $red;
+        }
+
+        &__red:hover {
+            opacity: 0.7;
+        }
+
+        &__link {
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin: 10px 5px;
+
+        }
+    }
+
+    .copy {
+        padding-left: 240px;
+    }
+
+
+}

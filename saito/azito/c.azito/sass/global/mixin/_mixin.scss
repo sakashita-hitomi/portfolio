@@ -1,0 +1,17 @@
+// settingフォルダの変数を読み込みます
+
+@use "../setting" as *;
+
+@mixin arrow($top: 0px, $right: 0px) {
+    position: relative;
+        ::after {
+            content: "";
+            position: absolute;
+            top: $top;
+            right: $right;
+            width: 16px;
+            height: 16px;
+            color: $light;
+            background: url(../images/arrow-right-circle.svg) center center / cover;
+        }
+}

@@ -1,0 +1,67 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+.gnav {
+    &__nav {
+        display: flex;
+
+    }
+
+    &__list {}
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        padding: 10px 25px;
+        color: #C1C0C0;
+    }
+}
+
+.gnav2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 100vh;
+    background: rgba(251, 207, 206, 0.6);
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+    transform: translateX(100%);
+    transition: .4s;
+
+    &__list2 {
+        margin-bottom: 30px;
+        letter-spacing: 0.1em;
+    }
+
+    &__link2 {
+        display: block;
+        color: #C1C0C0;
+        text-decoration: none;
+        padding: 20px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__box {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    &__pic {
+        width: 200px;
+    }
+ &__img { 
+    &:hover {
+        color: #fff;
+    }
+}
+}

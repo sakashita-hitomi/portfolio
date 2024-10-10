@@ -1,0 +1,284 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+#question {
+
+    a {
+        display: block;
+    }
+
+    // a {
+    //     text-decoration: none;
+    //     color: inherit;
+    //     display: block;
+    // }
+
+   
+
+    .dot__line {
+        width: 1150px;
+        height: 32px;
+        margin: 80px auto 80px;
+        background-image: url(../images/lp_mv_dot.png);
+    }
+
+    // p {
+    //     line-height: 190%;
+    //     letter-spacing: 0.05em;
+    // }
+
+
+    .mv {
+        width: 1150px;
+        height: 100vh;
+        padding: 120px 0 130px;
+        margin: 0 auto;
+
+        &__photo {
+            width: 1150px;
+            height: 528px;
+            background: url(../images/ques_mv.jpg)center center / cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        &__catch {
+            padding: 16px 36px;
+            font-size: 64px;
+            font-weight: bold;
+            line-height: 1;
+            letter-spacing: .05em;
+            text-align: center;
+            background: $white;
+            transform: translate(0, -50px);
+        }
+
+        &__pagettl {
+            width: fit-content;
+            margin: 0 auto;
+            background: $white;
+            padding: 16px 36px;
+            transform: translate(0, -50px);
+            font-size: 64px;
+            font-weight: bold;
+            line-height: 1;
+            letter-spacing: .05em;
+            text-align: center;
+        }
+
+        &__dot {
+            height: 32px;
+            background: url(../images/lp_mv_dot.png);
+        }
+    }
+
+    .sec__ttl {
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 2;
+        letter-spacing: .05em;
+    }
+
+    .sec__ttl__sub {
+        font-weight: bold;
+        text-align: center;
+        font-size: 32px;
+        line-height: 2;
+        letter-spacing: .05em;
+        width: 600px;
+        border: 1px solid #000;
+        margin: 0 auto 40px auto;
+
+    }
+
+    .sec__txt {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: 0.05em;
+        margin-bottom: 40px;
+    }
+
+    // sec1
+    .sec1 {
+        padding-top: 80px;
+        text-align: center;
+
+        &::before {
+            content: url(../images/mvimg5.png);
+            display: block;
+
+            margin-bottom: 80px;
+
+        }
+
+
+    }
+
+    // sec2
+    .sec2 {
+        &__con {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 80px;
+            margin: 0 auto 80px;
+            width: 1150px;
+            // height: 2000px;
+        }
+
+        &__box__dot {
+            height: 17px;
+            margin-bottom: 40px;
+            background: url(../images/ques_box_dotb.png);
+        }
+
+        &__list {
+            font-weight: bold;
+
+        }
+
+        &__link {
+            position: relative;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                color: #888;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 10px;
+                height: 10px;
+                left: -1px;
+                bottom: 21px;
+                border-radius: 50%;
+                background-color: $red;
+            }
+        }
+    }
+
+    .x {
+        font-weight: bold;
+    }
+
+    .social {
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        padding: 10px 20px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 10px;
+            left: -1px;
+            bottom: 21px;
+            border-radius: 50%;
+            background-color: $red;
+        }
+        &:hover {
+            color: #888;
+        } 
+    }
+
+
+    .box {
+
+        text-align: center;
+        width: 495px;
+        // margin-left: 80px;
+        // height: 670px;
+
+        &__q {
+            font-size: 70px;
+            font-weight: bold;
+            font-family: "spectral", serif;
+            color: $blue;
+        }
+
+        &__txt {
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+            font-size: 29px;
+            font-weight: bold;
+            height: 150px;
+            margin-bottom: 30px;
+        }
+
+        &__pic {
+            margin: 10px 202px;
+        }
+
+        &__a {
+            margin-bottom: 5px;
+            line-height: 1.5;
+            color: $red;
+            font-family: "spectral", serif;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        &__line {
+            margin-bottom: 30px;
+            background: $grey;
+            line-height: 2;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        &__txt2 {
+            height: 160px;
+            padding: 0 8px;
+            margin-bottom: 20px;
+            line-height: 2;
+            letter-spacing: 0.05em;
+            text-align: left;
+        }
+
+
+    }
+
+    .sec3 {
+        &__box__dot {
+            height: 17px;
+            margin-bottom: 40px;
+            background: url(../images/ques_box_dotr.png);
+        }
+
+        &__con {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 80px;
+            margin: 0 auto 80px;
+            width: 1150px;
+            // height: 2000px;
+        }
+    }
+
+
+    .sec4 {
+        &__box__dot {
+            height: 17px;
+            margin: 15px 0 40px 0;
+            background: url(../images/ques_box_dotb.png);
+        }
+
+        &__con {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 80px;
+            margin: 0 auto 80px;
+            width: 1150px;
+            // height: 1500px;
+        }
+    }
+
+
+
+}

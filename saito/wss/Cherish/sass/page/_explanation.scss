@@ -1,0 +1,461 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+#explanation {
+
+    a {
+        display: block;
+    }
+
+
+    .mv {
+        width: 1150px;
+        height: 100vh;
+        padding: 120px 0 130px;
+        margin: 0 auto;
+        position: relative;
+
+        &__photo {
+            width: 1150px;
+            height: 528px;
+            background: url(../images/ex_mv.jpg)center center / cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        &__catch {
+            padding: 16px 36px;
+            font-size: 64px;
+            font-weight: bold;
+            line-height: 1;
+            letter-spacing: .05em;
+            text-align: center;
+            background: $white;
+            transform: translate(0, -50px);
+        }
+
+        &__pagettl {
+            width: fit-content;
+            margin: 0 auto;
+            background: $white;
+            padding: 16px 36px;
+            transform: translate(0, -50px);
+            font-size: 64px;
+            font-weight: bold;
+            line-height: 1;
+            letter-spacing: .05em;
+            text-align: center;
+        }
+
+        &__dot {
+            height: 32px;
+            background: url(../images/lp_mv_dot.png);
+        }
+
+        &__con {
+            padding: 35px 0;
+            width: 228px;
+            height: 228px;
+            border-radius: 50%;
+            background: $yellow;
+            text-align: center;
+            position: absolute;
+            bottom: 130px;
+            right: -70px;
+
+        }
+
+        &__txt {
+            margin: 0 0 25px 0;
+            color: $white;
+            font-size: 23px;
+            font-weight: bold;
+            letter-spacing: .09em;
+            line-height: 1.5;
+
+            &2::before {
+                content: "";
+                width: 149px;
+                height: 1px;
+                background: $white;
+                position: absolute;
+                top: 120px;
+                left: 39px;
+
+            }
+        }
+
+
+    }
+
+    .sec1 {
+        text-align: center;
+        padding-top: 80px;
+
+        &::before {
+            content: url(../images/mvimg5.png);
+            display: block;
+
+            margin-bottom: 80px;
+
+        }
+
+        &__txt {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 2;
+            letter-spacing: .05em;
+            margin-bottom: 40px;
+        }
+
+        &__ttl__sub {
+            line-height: 2.2;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        &__pointttl {
+            margin-right: 44px;
+            font-weight: bold;
+            font-size: 64px;
+            font-family: "spectral", serif;
+
+        }
+
+        &__point {
+            display: flex;
+            margin: 0 auto 38px;
+
+
+        }
+
+        &__pointbox {
+            text-align: left;
+            padding: 0 0 0 20px;
+        }
+
+        &__pointo__con {
+            width: 740px;
+            margin: 0 auto 80px;
+        }
+    }
+
+    .sec__ttl {
+        font-size: 34px;
+        margin-bottom: 40px;
+    }
+
+    .dot__line {
+        width: 1150px;
+        height: 32px;
+        margin: 0 auto 80px;
+        background-image: url(../images/lp_mv_dot.png);
+    }
+
+
+    .sec2 {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+
+        &__con {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__ttl {
+            padding-top: 5px;
+            margin-bottom: 60px;
+        }
+
+        &__wrapper {
+            padding: 0 70px;
+            margin-bottom: 60px;
+        }
+
+        &__flow1 {
+            &::before {
+                content: "01";
+            }
+
+            // &::after {
+            //     content: "";
+            //     position: absolute;
+            //     background: $yellow;
+            //     left: 13px;
+            //     top: 64px;
+            //     height: 100px;
+            //     width: 1px;
+            // }
+        }
+
+        &__flow2 {
+            &::before {
+                content: "02";
+            }
+        }
+
+        &__flow3 {
+            &::before {
+                content: "03";
+            }
+        }
+
+        &__box {
+            padding: 0 0 40px 65px;
+            margin-bottom: 10px;
+            position: relative;
+            height: 190px;
+
+            &::before {
+
+                line-height: 64px;
+                text-align: center;
+                position: absolute;
+                width: 64px;
+                height: 64px;
+                left: -18px;
+                top: 0;
+                border-radius: 5px;
+                color: #ffffff;
+                background-color: $yellow;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                background: $yellow;
+                left: 13px;
+                top: 64px;
+                height: 140px;
+                width: 1px;
+            }
+
+
+        }
+
+        &__ttl {
+            line-height: 190%;
+            margin-bottom: 18px;
+        }
+
+        &__txt {
+            line-height: 190%;
+        }
+    }
+
+    .box__ttl {
+        margin-bottom: 20px;
+        line-height: 2;
+        letter-spacing: .05em;
+    }
+
+    .sec2__con2txt {
+        position: relative;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 190%;
+        margin-bottom: 20px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 10px;
+            left: -21px;
+            bottom: 9px;
+            border-radius: 50%;
+            background-color: $red;
+        }
+    }
+
+    .sec2__con2txt2::before {
+        background-color: $blue;
+        top: 12px;
+    }
+
+    .sec2__link {
+        position: relative;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.9;
+        right: -23px;
+        padding: 5px 0;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            color: #888;
+        }
+
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 10px;
+            left: -21px;
+            bottom: 12px;
+            border-radius: 50%;
+            background-color: $red;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: #000;
+            left: -22px;
+            top: 32px;
+            height: 1px;
+            width: 67px;
+        }
+    }
+
+    .sec2__tel {
+        position: relative;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.9;
+        right: -23px;
+        padding: 5px 0;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 10px;
+            left: -21px;
+            bottom: 14px;
+            border-radius: 50%;
+            background-color: $blue;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: #000;
+            left: -22px;
+            top: 32px;
+            height: 1px;
+            width: 133px;
+        }
+    }
+
+    .sec3 {
+        text-align: center;
+
+        &__ttl {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        &__txt {
+            font-weight: bold;
+            margin-bottom: 40px;
+            letter-spacing: 0.05em;
+            line-height: 2;
+        }
+
+        &__con {
+            width: 760px;
+            margin: 0 auto 40px;
+            background-color: $grey;
+            padding: 64px 40px;
+            border-radius: 10px;
+        }
+
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .box__example {
+        color: #333;
+    }
+
+
+    .form__group {
+        margin-bottom: 20px;
+    }
+
+    .form__label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .form__btn {
+        display: inline-block;
+        width: 235px;
+        height: 50px;
+
+        // margin: 30px 0;
+        border-radius: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: $white;
+        background: $blue;
+        border: 1px solid #000;
+        text-decoration: none;
+
+        &:hover {
+            background: $white;
+            color: $blue;
+        }
+
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid $white;
+    }
+
+    input[type="date"] {
+        padding: 10px;
+        width: 300px;
+        border: 1px solid $white;
+    }
+
+    .box5 textarea {
+        width: 600px;
+    }
+
+
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="date"]:focus,
+    input[type="tel"]:focus,
+    textarea:focus {
+        border-color: #9a5c5c;
+        outline: none;
+    }
+
+    button[type="submit"] {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        opacity: 0.65;
+    }
+
+
+
+
+}

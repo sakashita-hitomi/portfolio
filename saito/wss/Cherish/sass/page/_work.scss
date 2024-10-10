@@ -1,0 +1,192 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+#work {
+
+    // text-align: center;
+
+    a {
+        display: block;
+    }
+
+
+    .mv {
+        width: 1150px;
+        height: 100vh;
+        padding: 120px 0 130px;
+        margin: 0 auto;
+
+        &__photo {
+            width: 1150px;
+            height: 528px;
+            background: url(../images/sec6img1.jpg)center center / cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        &__catch {
+            padding: 16px 36px;
+            font-size: 64px;
+            font-weight: bold;
+            line-height: 1;
+            letter-spacing: .05em;
+            text-align: center;
+            background: $white;
+            transform: translate(0, -50px);
+        }
+
+        &__pagettl {
+            width: fit-content;
+            margin: 0 auto;
+            background: $white;
+            padding: 16px 36px;
+            transform: translate(0, -50px);
+            font-size: 64px;
+            font-weight: bold;
+            line-height: 1;
+            letter-spacing: .05em;
+            text-align: center;
+        }
+
+
+        &__dot {
+            height: 32px;
+            background: url(../images/lp_mv_dot.png);
+        }
+    }
+
+    .dot__line {
+        width: 1150px;
+        height: 32px;
+        margin: 0 auto 240px;
+        background-image: url(../images/lp_mv_dot.png);
+    }
+
+
+    .sec1__ttl, .sec2__ttl,.sec3__ttl {
+        text-align: center;
+        font-size: 34px;
+        line-height: 1.9;
+        letter-spacing: 0.05em;
+    }
+
+    .sec1 {
+        max-width: 1440px;
+        margin: 0 auto 180px;
+        padding: 0 80px;
+        text-align: center;
+
+        &::before {
+            content: url(../images/mvimg5.png);
+            display: block;
+            margin-bottom: 80px;
+        }
+
+
+        &__txt {
+            width: 830px;
+            margin: 0 auto 130px;
+            padding-top: 40px;
+            line-height: 2.4em;
+            letter-spacing: 0.05em;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        &__box1 {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 100px;
+            margin-bottom: 100px;
+
+        }
+
+        &__box2 {
+            display: flex;
+            justify-content: space-between;
+           
+
+        }
+
+       
+
+        &__subttl {
+            margin-bottom: 24px;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 2;
+        }
+
+        &__subttl2 {
+            text-align: center;
+            font-size: 34px;
+            font-weight: bold;
+            margin-top: 160px;
+        }
+
+        &__subtxt {
+           line-height: 2;
+            letter-spacing: 0.05em;
+            text-align: left;
+        }
+
+        &__subbox {
+            margin: 20px;
+        }
+
+    }
+
+    .sec2 {
+        width: 1400px;
+        margin: 0 auto 240px;
+        display: flex;
+        &__box {
+            width: 50%;
+        }
+    }
+
+
+    .sec3 {
+        &__container {
+            width: 960px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            
+            &Last {
+                margin-bottom: 250px;
+                &::after {
+                    content:"";
+                    width: 45%;
+                }
+            }
+            
+        }
+        &__icon {
+            width: 200px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+    }
+
+
+    }
+    .subtxt {
+        padding-top: 10px;
+        margin-bottom: 80px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .icon__link {
+        padding: 20px;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+}
