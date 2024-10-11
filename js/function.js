@@ -11,6 +11,12 @@ $('#header__btn').on('click', function(){
  $('#gnav').toggleClass('translateNav');
  });
 
+ $('.gnav__link').on('click', function(){
+    $('#header__btn__top').removeClass('rotateTop');//上の線
+    $('#header__btn__middle').removeClass('hideMiddle');//中央の線
+    $('#header__btn__bottom').removeClass('rotateBottom');
+    $('#gnav').removeClass('translateNav');
+ });
 
 
 });

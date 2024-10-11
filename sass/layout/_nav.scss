@@ -39,7 +39,7 @@
     }
 
     &__list {
-        margin-bottom: 60px;
+        margin-bottom: 36px;
 
         @media screen and (min-width: 1024px) {
             margin: 0;
@@ -53,11 +53,15 @@
         color: #fff;
         text-decoration: none;
         padding: 10px 38%;
+        @media screen and (min-width: 768px) {
+          font-size: 30px;
+        }
 
         @media screen and (min-width: 1024px) {
             position: static;
             //   background: $orange;
             padding: 37px 44px;
+            font-size: 16px;
         }
 
         &:hover {
@@ -73,15 +77,49 @@
         &::before {
             position: absolute;
             content: "";
-            top: 0;
-            left: 113px;
+            top: 2px;
+            left: 101px;
             width: 30px;
             height: 30px;
             background: url(../images/arrow.png) center center / cover;
 
+            @media screen and (min-width: 768px) {
+
+                top: 5px;
+                left: 194px;
+                width: 40px;
+                height: 40px;
+            }
+
             @media screen and (min-width: 1024px) {
                 display: none;
             }
+        }
+    }
+
+    &__box {
+        width: 50%;
+        margin-left: 36%;
+        @media screen and (min-width: 1024px) {
+          display: none;
+        }
+
+    }
+
+    &__lists {
+        margin-bottom: 28px;
+    }
+
+    &__links {
+        display: block;
+        padding: 10px 17%;
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+            color: $darkorange;
+        }
+        @media screen and (min-width: 768px) {
+          font-size: 18px;
         }
     }
 }

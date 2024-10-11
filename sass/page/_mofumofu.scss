@@ -1,172 +1,226 @@
 @use "../global" as *;
 
-body {
+#mofumofu {
     background: #f5f5f5;
-}
 
-.mofu {
-    margin: 150px 0 50px;
-    letter-spacing: 0.1em;
-    line-height: 1.2em;
+    body {}
 
-    @media screen and (min-width: 1024px) {
-        margin: 13% 0 50px;
-    }
-
-    &__ttl {
-        position: relative;
-        margin: 0 0 7px 30px;
-        font-size: 9px;
-        font-weight: normal;
-        font-family: $mohave;
-
-        @media screen and (min-width: 768px) {
-            font-size: 15px;
-            margin: 0 0 7px 83px;
-        }
+    .mofu {
+        margin: 150px 0 50px;
+        letter-spacing: 0.1em;
+        line-height: 1.2em;
 
         @media screen and (min-width: 1024px) {
-            margin: 0 0 26px 18%;
-            font-size: 20px;
+            margin: 13% 0 50px;
         }
 
-        &::before {
-            position: absolute;
-            content: "";
-            top: 8px;
-            left: -28px;
-            width: 15px;
-            height: 1px;
-            background: #000;
-        }
+        &__ttl {
+            position: relative;
+            margin: 0 0 7px 30px;
+            font-size: 9px;
+            font-weight: normal;
+            font-family: $mohave;
 
-        &__box {
-            margin: 0 7% 30px;
-            padding: 5px;
-
-            @media screen and (min-width: 1024px) {
-                margin: 0 16% 60px;
+            @media screen and (min-width: 768px) {
+                font-size: 15px;
+                margin: 0 0 7px 83px;
             }
 
-            &::after {
+            @media screen and (min-width: 1024px) {
+                margin: 0 0 26px 18%;
+                font-size: 20px;
+            }
+
+            &::before {
                 position: absolute;
                 content: "";
-                top: 77px;
-                right: 4px;
-                width: 97%;
-                height: 73px;
-                background: url(../images/s-k.jpg) center center / cover;
+                top: 8px;
+                left: -28px;
+                width: 15px;
+                height: 1px;
+                background: #000;
+            }
+
+            &__box {
+                margin: 0 7% 30px;
+                padding: 5px;
+
+                @media screen and (min-width: 1024px) {
+                    margin: 0 16% 60px;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "DETAILS";
+                    top: 92px;
+                    right: 0px;
+                   font-size: 64px;
+                   color: $red;
+                    // background: url(../images/s-k.jpg) center center / cover;
+
+                    @media screen and (min-width: 768px) {
+                        right: 5px;
+                        height: 10%;
+                        width: 66%;
+                    }
+
+                    @media screen and (min-width: 1024px) {
+                        right: 12px;
+                        top: 145px;
+                        height: 22%;
+                        width: 53%;
+                    }
+                }
+            }
+
+            &__txt {
+                margin-bottom: 10px;
+                font-size: 16px;
+                font-weight: bold;
 
                 @media screen and (min-width: 768px) {
-                    right: 5px;
-                    height: 10%;
-                    width: 66%;
+                    font-size: 26px;
                 }
 
                 @media screen and (min-width: 1024px) {
-                    right: 12px;
-                    top: 145px;
-                    height: 22%;
-                    width: 53%;
+                    font-size: 40px;
+                    margin-bottom: 40px;
+                }
+            }
+
+            &__sub {
+                font-size: 14px;
+
+                @media screen and (min-width: 1024px) {
+                    font-size: 25px;
                 }
             }
         }
 
-        &__txt {
-            margin-bottom: 10px;
-            font-size: 16px;
-            font-weight: bold;
+        &__pic {
+            margin: 20px 0 20px 0;
 
             @media screen and (min-width: 768px) {
-                font-size: 26px;
+                width: 97%;
+                margin-bottom: 80px;
             }
 
             @media screen and (min-width: 1024px) {
-                font-size: 40px;
-                margin-bottom: 40px;
+                margin-bottom: 140px;
             }
         }
 
-        &__sub {
-            font-size: 14px;
+        &__img {
+            @media screen and (min-width: 768px) {
+                border-radius: 0 50px 0 0;
 
-            @media screen and (min-width: 1024px) {
-                font-size: 25px;
             }
         }
     }
 
-    &__pic {
-        margin-bottom: 20px;
+    .detail {
 
-        @media screen and (min-width: 768px) {
-            width: 97%;
-            margin-bottom: 80px;
+        letter-spacing: 0.2em;
+        line-height: 1.7;
+
+
+
+        &__box1 {
+            margin: 0 7%;
+
+            &__txt {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            &__sub {
+                margin-bottom: 9px;
+                font-size: 12px;
+                font-family: $mohave;
+                color: #c4c4c4;
+            }
         }
 
-        @media screen and (min-width: 1024px) {
-            margin-bottom: 140px;
+        &__box2 {
+            margin: 0 7%;
+            margin-bottom: 60px;
+
+            &__ttl {
+                margin-bottom: 6px;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            &__txt {
+                margin-bottom: 30px;
+                font-size: 14px;
+            }
+
+            &__list {
+                margin-bottom: 30px;
+            }
+
+            &__pic {
+                margin-bottom: 9px;
+            }
+
+            &__txt2 {}
+        }
+
+        &__arch {
+            width: 100%;
+            height: 283px;
+            background: url(../../images/Frame.jpg) center center / 100% 67% no-repeat;
         }
     }
 
-    &__img {
-        @media screen and (min-width: 768px) {
-            border-radius: 0 50px 0 0;
+    .kanp {
+        &__con {}
 
-        }
-    }
-}
-
-.detail {
-    margin: 0 7%;
-    letter-spacing: 0.2em;
-    line-height: 1.7;
-    
-
-
-    &__box1 {
-        &__txt {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        &__sub {
-            margin-bottom: 9px;
-            font-size: 12px;
-            font-family: $mohave;
-            color: #c4c4c4;
-        }
-    }
-
-    &__box2 {
-        margin-bottom: 60px;
         &__ttl {
-            margin-bottom: 6px;
-            font-size: 15px;
-            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
         }
 
-        &__txt {
-            margin-bottom: 30px;
-            font-size: 14px;
+        &__box1 {
+            margin: 0 auto 40px;
+            width: 80%;
         }
-        &__list {
-            margin-bottom: 30px;
-        }
-        &__pic {
-            margin-bottom: 9px;
-        }
-        &__txt2 {
 
+        &__box2, &__box3 {
+            margin: 0 auto 40px;
+            width: 60%;
+        }
+&__box4 {
+    margin: 0 7% 50px;
+    text-align: center;
+}
+&__list {
+    margin-bottom: 8px;
+}
+    }
+
+    .dbtn {
+        &__link {
+            text-decoration: none;
+            color: #000;
         }
     }
-}
-.dbtn {
-    &__link {
-        text-decoration: none;
-        color: #000;
+    .more {
+        display: flex;
+        justify-content: right;
     }
-}
-.icon {
-    color: $orange;
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        color: $orange;
+        @media screen and (min-width: 1024px) {
+            font-size: 34px;
+            width: 40px;
+            height: 40px;
+        }
+    }
 }

@@ -2,7 +2,7 @@
 //as *で読み込みファイル名を省略することができます
 @use "../global" as *;
 
-
+#top {
 
 .btn {
     position: relative;
@@ -650,7 +650,7 @@ font-size: clamp(2.313rem, 1.235rem + 4.6vw, 6.75rem);
 
             &__img {
                 @include work-img;
-                background: url(../images/anime1.png) center center / cover;
+                background: url(../images/saito1.jpg) center center / cover;
             }
         }
 
@@ -659,7 +659,7 @@ font-size: clamp(2.313rem, 1.235rem + 4.6vw, 6.75rem);
 
             &__img {
                 @include work-img;
-                background: url(../images/thum1.jpg) center center / cover;
+                background: url(../images/thum01.jpg) center center / cover;
             }
         }
 
@@ -668,7 +668,31 @@ font-size: clamp(2.313rem, 1.235rem + 4.6vw, 6.75rem);
 
             &__img {
                 @include work-img;
-                background: url(../images/anime1.png) center center / cover;
+                background: url(../images/kanp1.jpg) center center / cover;
+            }
+        }
+        &__con4 {
+            @include work-pic($yellow, 'サイト');
+
+            &__img {
+                @include work-img;
+                background: url(../images/saito2.jpg) center center / cover;
+            }
+        }
+        &__con5 {
+            @include work-pic($pink, 'サムネ');
+
+            &__img {
+                @include work-img;
+                background: url(../images/thum02.jpg) center center / cover;
+            }
+        }
+        &__con6 {
+            @include work-pic($red, 'カンプ');
+
+            &__img {
+                @include work-img;
+                background: url(../images/kanp3.jpg) center center / cover;
             }
         }
 
@@ -976,10 +1000,10 @@ font-size: clamp(2.313rem, 1.235rem + 4.6vw, 6.75rem);
         position: absolute;
         z-index: -1;
         bottom: -93px;
-        left: 24px;
-        width: 93%;
-        height: 584px;
-        @include maru (39% 57% 49% 59% / 59% 44% 60% 43%);
+        left: -73px;
+        width: 139%;
+        height: 569px;
+        @include maru (45% 57% 49% 59% / 59% 44% 60% 43%);
         @media screen and (min-width: 1024px) {
           bottom: -135px;
           left: 30%;
@@ -1042,4 +1066,5 @@ font-size: clamp(2.313rem, 1.235rem + 4.6vw, 6.75rem);
         cursor: pointer;
         -webkit-appearance: none;
     }
+}
 }
