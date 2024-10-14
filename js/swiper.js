@@ -13,7 +13,7 @@ const swiperWork = new Swiper('.swiper-work',{
     },
     breakpoints: {
         768: {
-          slidesPerView: 2,
+          slidesPerView: 2.5,
           spaceBetween: 30,
         }
       },
