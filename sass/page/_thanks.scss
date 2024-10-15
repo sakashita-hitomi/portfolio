@@ -1,0 +1,122 @@
+@use "../global" as *;
+
+#ty {
+    .btn {
+        position: relative;
+        width: 310px;
+        height: 50px;
+        margin: 40px auto 100px;
+        background: $darkorange;
+        border-radius: 40px;
+        font-family: $mohave;
+
+        @media screen and (min-width: 768px) {
+            margin: 50px auto;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 480px;
+            height: 82px;
+            font-size: 20px;
+            letter-spacing: 0.5em;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 5px;
+            width: 45px;
+            height: 45px;
+            background: url(../images/btn.svg) center center / cover;
+
+            @media screen and (min-width: 1024px) {
+                top: 5px;
+                left: 10px;
+                width: 72px;
+                height: 72px;
+            }
+        }
+
+        &__link {
+            display: block;
+            padding: 16px 50px;
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+
+            @media screen and (min-width: 1024px) {
+                padding: 30px 50px;
+            }
+        }
+
+        &:hover {
+            background: $orange;
+            transition: all 0.5s;
+        }
+    }
+
+.ty {
+    &__box {
+        margin: 100px 0 0 0;
+        width: 100%;
+        height: 65vh;
+        text-align: center;
+        color: #fff;
+        background: url(../images/Frame3.jpg) top center / cover;
+        @media screen and (min-width: 1024px) {
+          margin-top: 150px;
+        }
+    }
+    &__ttl {
+        position: relative;
+        padding-top: 158px;
+        margin-bottom: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 111%;
+            right: 50%;
+            transform: translate(-50%,-50%);
+            width: 2px;
+            height: 15px;
+            background: #fff;
+            @media screen and (min-width: 1024px) {
+              top: 92%;
+              height: 35px;
+            }
+        }
+        @media screen and (min-width: 768px) {
+          font-size: 22px;
+        }
+        @media screen and (min-width: 1024px) {
+            padding: 130px 0 75px 0;
+          font-size: 35px;
+        }
+    }
+    &__sub {
+        margin-bottom: 30px;
+        font-size: 12px;
+        font-family: $mohave;
+        @media screen and (min-width: 768px) {
+          font-size: 16px;
+        }
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 50px;
+          font-size: 23px;
+        }
+    }
+    &__txt {
+        font-size: 16px;
+        @media screen and (min-width: 768px) {
+          font-size: 20px;
+        }
+        @media screen and (min-width: 1024px) {
+          font-size: 27px;
+        }
+    }
+}
+
+}

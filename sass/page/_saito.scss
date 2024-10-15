@@ -61,21 +61,25 @@
         }
 
         &__box {
+            position: relative;
             margin: 0 7% 30px;
             padding: 5px;
 
             @media screen and (min-width: 1024px) {
                 margin: 0 16% 60px;
             }
-
-            &::after {
+            &::before {
                 position: absolute;
-                content: "";
-                top: 77px;
-                right: 4px;
-                width: 97%;
-                height: 73px;
-                background: url(../images/s-k.jpg) center center / cover;
+                content: "THE IMPORTANT THING IS TO";
+                top: 0;
+                right: 0;
+                font-size: 30px;
+                color: $red;
+                // top: 77px;
+                // right: 4px;
+                // width: 97%;
+                // height: 73px;
+                // background: url(../images/s-k.jpg) center center / cover;
 
                 @media screen and (min-width: 768px) {
                     right: 5px;
@@ -90,6 +94,30 @@
                     width: 53%;
                 }
             }
+
+            &::after {
+                position: absolute;
+                content: "“COMMUNICATE”";
+                // top: 77px;
+                // right: 4px;
+                // width: 97%;
+                // height: 73px;
+                // background: url(../images/s-k.jpg) center center / cover;
+
+                @media screen and (min-width: 768px) {
+                    right: 5px;
+                    height: 10%;
+                    width: 66%;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    right: 12px;
+                    top: 145px;
+                    height: 22%;
+                    width: 53%;
+                }
+            }
+           
         }
 
         &__txt {
