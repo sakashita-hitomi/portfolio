@@ -4,1094 +4,1139 @@
 
 #top {
 
-.btn {
-    position: relative;
-    width: 310px;
-    height: 50px;
-    margin: 40px auto 100px;
-    background: $darkorange;
-    border-radius: 40px;
-    font-family: $mohave;
-
-    @media screen and (min-width: 768px) {
-        margin: 50px auto;
-    }
-    @media screen and (min-width: 1024px) {
-      width: 480px;
-      height: 82px;
-      font-size: 20px;
-      letter-spacing: 0.5em;
-    }
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: 5px;
-        width: 45px;
-        height: 45px;
-        background: url(../images/btn.svg) center center / cover;
-        @media screen and (min-width: 1024px) {
-            top: 5px;
-            left: 10px;
-          width: 72px;
-          height: 72px;
-        }
-    }
-
-    &__link {
-        display: block;
-        padding: 16px 50px;
-        text-decoration: none;
-        text-align: center;
-        color: #fff;
-        @media screen and (min-width: 1024px) {
-          padding: 21px 50px;
-        }
-    }
-
-    &:hover {
-        background: $orange;
-        transition: all 0.5s;
-    }
-}
-
-.main {
-    overflow: hidden;
-    line-height: 1.4;
-}
-
-.mv {
-    margin-bottom: 120px;
-@media screen and (min-width: 768px) {
-  margin-bottom: 200px;
-}
-    @media screen and (min-width: 1024px) {
-        margin-bottom: 170px;
-    }
-
-    &__img {
+    .btn {
         position: relative;
-        width: 100%;
-        height: 350px;
-        background: url(../images/mv.png) center center / contain no-repeat;
-
-        @media screen and (min-width: 768px) {
-            width: 100%;
-            top: 80px;
-            background-position: right top;
-        }
-
-        @media screen and (min-width: 1024px) {
-            height: 100vh;
-        }
-    }
-
-    &__ttl {
-        margin: 0 7%;
-        // font-size: 9vw;
+        width: 310px;
+        height: 50px;
+        margin: 40px auto 100px;
+        background: $darkorange;
+        border-radius: 40px;
         font-family: $mohave;
-        color: $orange;
-font-size: clamp(2.313rem, 1.235rem + 4.6vw, 6.75rem);
-        // @media screen and (min-width: 1024px) {
-        //     font-size: 132px;
-        // }
-    }
-
-    &__txt {
-        margin: 0 7%;
-        font-size: clamp(0.875rem, 0.511rem + 1.55vw, 2.375rem);
-        font-weight: bold;
-
-        @media screen and (min-width: 1024px) {
-            margin-bottom: 160px;
-        }
-    }
-
-    &__box {
-        position: absolute;
-        width: 90%;
-        bottom: -37px;
-        left: 0;
 
         @media screen and (min-width: 768px) {
-            bottom: -135px;
-            margin-bottom: 100px;
-        }
-    }
-}
-
-.about {
-    margin: 0 7% 350px;
-    color: #fff;
-
-    &__con {
-        position: relative;
-        padding: 50px 0;
-        margin-bottom: 100px;
-
-        @media screen and (min-width: 768px) {
-            width: 450px;
+            margin: 50px auto;
         }
 
         @media screen and (min-width: 1024px) {
-            margin-left: 16%;
-
-        }
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: -205px;
-            left: 0;
-            width: 200px;
-            height: 250px;
-            background: url(../images/about1.png) center center / cover;
-
-            @media screen and (min-width: 768px) {
-                top: -97px;
-                left: 91%;
-                width: 370px;
-                height: 400px;
-            }
-
-            @media screen and (min-width: 1024px) {
-                left: 98%;
-                width: 550px;
-                height: 550px;
-            }
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: -142px;
-            left: -18px;
-            width: 160px;
-            height: 140px;
-            background: url(../images/about2.png) center center / cover;
-
-            @media screen and (min-width: 768px) {
-                left: 80%;
-                width: 225px;
-                height: 197px;
-            }
-
-            @media screen and (min-width: 1024px) {
-                left: 105%;
-                bottom: -231px;
-                width: 400px;
-                height: 350px;
-            }
-        }
-    }
-
-    &__ttl {
-        position: relative;
-        font-size: 10px;
-        font-weight: normal;
-        text-align: center;
-        margin-bottom: 5px;
-        color: #000;
-
-        @media screen and (min-width: 768px) {
-            font-size: 15px;
-            margin: 16px;
-        }
-
-        @media screen and (min-width: 1024px) {
+            width: 480px;
+            height: 82px;
             font-size: 20px;
-            margin: 24px;
+            letter-spacing: 0.5em;
         }
 
         &::before {
             content: "";
             position: absolute;
-            top: -22px;
-            left: -50px;
-            width: 89px;
-            height: 89px;
-            @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
-
-            @media screen and (min-width: 768px) {
-                top: 61px;
-                left: -88px;
-                width: 114px;
-                height: 107px;
-            }
+            top: 2px;
+            left: 5px;
+            width: 45px;
+            height: 45px;
+            background: url(../images/btn.svg) center center / cover;
 
             @media screen and (min-width: 1024px) {
-                width: 218px;
-                height: 180px;
+                top: 5px;
+                left: 10px;
+                width: 72px;
+                height: 72px;
             }
         }
 
-        &::after {
-            content: "";
-            position: absolute;
-            top: 110px;
-            right: -75px;
-            width: 147px;
-            height: 147px;
-            @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
-
-            @media screen and (min-width: 768px) {
-                top: 223px;
-                right: -113px;
-                width: 213px;
-                height: 225px;
-                @include maru(62% 62% 45% 55% / 57% 54% 46% 43%);
-            }
+        &__link {
+            display: block;
+            padding: 16px 50px;
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
 
             @media screen and (min-width: 1024px) {
-                width: 426px;
-                height: 450px;
+                padding: 21px 50px;
             }
+        }
+
+        &:hover {
+            background: $orange;
+            transition: all 0.5s;
         }
     }
 
-    &__txt {
-        position: relative;
-        font-size: 17px;
-        font-weight: bold;
-        margin-bottom: 22px;
+    .main {
+        overflow: hidden;
+        line-height: 1.4;
+    }
+
+    .mv {
+        margin-bottom: 120px;
 
         @media screen and (min-width: 768px) {
-            font-size: 22px;
+            margin-bottom: 200px;
         }
 
         @media screen and (min-width: 1024px) {
-            font-size: 28px;
+            margin-bottom: 170px;
         }
 
-        &::before {
-            content: "";
-            position: absolute;
-            top: -63px;
-            left: -51%;
-            width: 210%;
-            height: 665px;
-            z-index: -1;
-            @include maru(57% 62% 45% 55% / 57% 54% 46% 43%);
-
-            @media screen and (min-width: 1024px) {
-                top: -164px;
-                left: -338px;
-                width: 1200px;
-                height: 825px;
-            }
-        }
-
-
-        &__sub {
-            margin-bottom: 15px;
-            font-size: 14px;
-            line-height: 1.8;
-
-            @media screen and (min-width: 768px) {
-                font-size: 15px;
-                line-height: 2;
-            }
-
-            @media screen and (min-width: 1024px) {
-                font-size: 16px;
-            }
-        }
-    }
-
-    &__arch {
-        width: 258px;
-        margin: 0 auto 200px;
-
-        @media screen and (min-width: 768px) {
-            width: 458px;
-            margin: 0 auto 145px;
-
-        }
-
-        @media screen and (min-width: 1024px) {
-            width: 522px;
-        }
-    }
-
-    &__archimg {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-.work {
-    margin: 0 7%;
-
-    &__ttl {
-        position: relative;
-        font-size: 10px;
-        font-weight: normal;
-        text-align: center;
-        margin-bottom: 5px;
-
-        @media screen and (min-width: 768px) {
-            font-size: 15px;
-        }
-
-        @media screen and (min-width: 1024px) {
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 103px;
-            left: -50px;
-            width: 89px;
-            height: 89px;
-            @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
-
-            @media screen and (min-width: 768px) {
-                top: 127px;
-                left: -98px;
-                width: 167px;
-                height: 157px;
-            }
-
-            @media screen and (min-width: 1024px) {
-                width: 223px;
-                height: 209px;
-            }
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            z-index: -1;
-            top: -69px;
-            right: -75px;
-            width: 147px;
-            height: 147px;
-            @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
-
-            @media screen and (min-width: 768px) {
-                right: -139px;
-                width: 176px;
-                height: 171px;
-            }
-
-            @media screen and (min-width: 1024px) {
-                right: 13%;
-                width: 232px;
-                height: 229px;
-            }
-        }
-    }
-
-    &__arch {
-        width: 280px;
-        margin: 0 auto 18px;
-
-        @media screen and (min-width: 768px) {
-            width: 500px;
-            margin: 0 auto 68px;
-        }
-
-        @media screen and (min-width: 1024px) {
-            width: 734px;
-        }
-    }
-
-    &__archimg {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    &__txtbox {
-        margin: 30px 0 0 20px;
-
-        @media screen and (min-width: 1024px) {
-            line-height: 2;
-            margin: 98px 140px 0 140px;
-        }
-    }
-
-    &__txt {
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 10px;
-
-        @media screen and (min-width: 768px) {
-            font-size: 21px;
-        }
-
-        @media screen and (min-width: 1024px) {
-            font-size: 28px;
-            margin-bottom: 35px;
-        }
-
-        &__sub {
+        &__img {
             position: relative;
-            font-size: 14px;
-            margin-bottom: 15px;
-
-            @media screen and (min-width: 768px) {
-                font-size: 16px;
-            }
-
-            @media screen and (min-width: 1024px) {
-                font-size: 16px;
-                margin-bottom: 25px;
-            }
-        }
-    }
-
-    &__shumcon {
-        margin-bottom: 200px;
-    }
-
-    &__txt2 {
-        position: relative;
-        text-align: center;
-        font-style: 15px;
-        font-weight: bold;
-        margin-bottom: 20px;
-
-        @media screen and (min-width: 1024px) {
-            font-size: 20px;
-            margin-bottom: 60px;
-        }
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 272px;
-            left: -50px;
-            width: 89px;
-            height: 89px;
-            z-index: -1;
-            @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
-
-            @media screen and (min-width: 768px) {
-                width: 210px;
-                height: 198px;
-            }
-
-            @media screen and (min-width: 1024px) {
-                left: 26px;
-                width: 280px;
-                height: 264px;
-            }
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: -69px;
-            right: -96px;
-            width: 147px;
-            height: 147px;
-            @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
-
-            @media screen and (min-width: 768px) {
-                right: -145px;
-                width: 250px;
-                height: 236px;
-                z-index: -1;
-            }
-
-            @media screen and (min-width: 1024px) {
-                right: -75px;
-                width: 334px;
-                height: 315px;
-            }
-        }
-    }
-
-    &__con {
-        width: 300px;
-        margin: 0 auto 140px;
-
-        @media screen and (min-width: 768px) {
-            display: flex;
             width: 100%;
-            &:nth-of-type(2) {
-                flex-direction: row-reverse;
-            }
-        }
-
-        @media screen and (min-width: 1024px) {
-            margin: 0 auto 280px;
-            width: 100%;
-        }
-    }
-
-    &__pic,
-    &__pic2 {
-        width: 300px;
-        margin-bottom: 8px;
-
-        @media screen and (min-width: 1024px) {
-            // width: 631px;
-            width: 50%;
-            height: 750px;
-        }
-    }
-
-    &__pic {
-        position: relative;
-
-        &::after {
-            position: absolute;
-            content: "";
-            bottom: -242px;
-            right: -64px;
-            width: 112px;
-            height: 100px;
-            @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+            height: 350px;
+            background: url(../images/mv.png) center center / contain no-repeat;
 
             @media screen and (min-width: 768px) {
-                bottom: -23%;
-                right: -169%;
-                width: 219px;
-                height: 227px;
+                width: 100%;
+                top: 80px;
+                background-position: right top;
             }
 
             @media screen and (min-width: 1024px) {
-                left: 147%;
-                width: 583px;
-                height: 477px;
+                height: 100vh;
+            }
+        }
 
+        &__ttl {
+            margin: 0 7%;
+            // font-size: 9vw;
+            font-family: $mohave;
+            color: $orange;
+            font-size: clamp(2.313rem, 1.235rem + 4.6vw, 6.75rem);
+            // @media screen and (min-width: 1024px) {
+            //     font-size: 132px;
+            // }
+        }
+
+        &__txt {
+            margin: 0 7%;
+            font-size: clamp(0.875rem, 0.511rem + 1.55vw, 2.375rem);
+            font-weight: bold;
+
+            @media screen and (min-width: 1024px) {
+                margin-bottom: 160px;
+            }
+        }
+
+        &__box {
+            position: absolute;
+            width: 90%;
+            bottom: -37px;
+            left: 0;
+
+            @media screen and (min-width: 768px) {
+                bottom: -135px;
+                margin-bottom: 100px;
             }
         }
     }
 
-    &__pic2 {
-        position: relative;
+    .about {
+        margin: 0 7% 350px;
+        color: #fff;
 
-        &::before {
-            content: "";
-            position: absolute;
-            z-index: -1;
-            top: -54px;
-            left: -68px;
-            width: 147px;
-            height: 147px;
-            @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+        &__con {
+            position: relative;
+            padding: 50px 0;
+            margin-bottom: 100px;
+
+            @media screen and (min-width: 768px) {
+                width: 450px;
+            }
 
             @media screen and (min-width: 1024px) {
-                width: 311px;
-                height: 222px;
+                margin-left: 16%;
+
             }
-        }
-        @media screen and (min-width: 768px) {
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -205px;
+                left: 0;
+                width: 200px;
+                height: 250px;
+                background: url(../images/about1.png) center center / cover;
+
+                @media screen and (min-width: 768px) {
+                    top: -97px;
+                    left: 91%;
+                    width: 370px;
+                    height: 400px;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    left: 98%;
+                    width: 550px;
+                    height: 550px;
+                }
+            }
+
             &::after {
                 content: "";
                 position: absolute;
-                z-index: -1;
-                top: 163px;
-                right: 567px;
-                width: 387px;
-                height: 316px;
-                @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+                bottom: -142px;
+                left: -18px;
+                width: 160px;
+                height: 140px;
+                background: url(../images/about2.png) center center / cover;
+
+                @media screen and (min-width: 768px) {
+                    left: 80%;
+                    width: 225px;
+                    height: 197px;
+                }
+
                 @media screen and (min-width: 1024px) {
-                  top: 51%;
-                  right: 202%;
-                  width: 500px;
-                  height: 400px;
+                    left: 105%;
+                    bottom: -231px;
+                    width: 400px;
+                    height: 350px;
                 }
             }
         }
 
-        &__img {
+        &__ttl {
+            position: relative;
+            font-size: 10px;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 5px;
+            color: #000;
+
+            @media screen and (min-width: 768px) {
+                font-size: 15px;
+                margin: 16px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 20px;
+                margin: 24px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -22px;
+                left: -50px;
+                width: 89px;
+                height: 89px;
+                @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
+
+                @media screen and (min-width: 768px) {
+                    top: 61px;
+                    left: -88px;
+                    width: 114px;
+                    height: 107px;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    width: 218px;
+                    height: 180px;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 110px;
+                right: -75px;
+                width: 147px;
+                height: 147px;
+                @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+
+                @media screen and (min-width: 768px) {
+                    top: 223px;
+                    right: -113px;
+                    width: 213px;
+                    height: 225px;
+                    @include maru(62% 62% 45% 55% / 57% 54% 46% 43%);
+                }
+
+                @media screen and (min-width: 1024px) {
+                    width: 426px;
+                    height: 450px;
+                }
+            }
+        }
+
+        &__txt {
+            position: relative;
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 22px;
+
+            @media screen and (min-width: 768px) {
+                font-size: 22px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 28px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -63px;
+                left: -51%;
+                width: 210%;
+                height: 665px;
+                z-index: -1;
+                @include maru(57% 62% 45% 55% / 57% 54% 46% 43%);
+
+                @media screen and (min-width: 1024px) {
+                    top: -164px;
+                    left: -338px;
+                    width: 1200px;
+                    height: 825px;
+                }
+            }
+
+
+            &__sub {
+                margin-bottom: 15px;
+                font-size: 14px;
+                line-height: 1.8;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 15px;
+                    line-height: 2;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &__arch {
+            width: 258px;
+            margin: 0 auto 200px;
+
+            @media screen and (min-width: 768px) {
+                width: 458px;
+                margin: 0 auto 145px;
+
+            }
+
+            @media screen and (min-width: 1024px) {
+                width: 522px;
+            }
+        }
+
+        &__archimg {
+            display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-    &__txtbox {
-        @media screen and (min-width: 1024px) {
-            width: 38%;
-            margin: 98px 60px 0;
+
+    .work {
+        margin: 0 7%;
+
+        &__ttl {
+            position: relative;
+            font-size: 10px;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 5px;
+
+            @media screen and (min-width: 768px) {
+                font-size: 15px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 103px;
+                left: -50px;
+                width: 89px;
+                height: 89px;
+                @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
+
+                @media screen and (min-width: 768px) {
+                    top: 127px;
+                    left: -98px;
+                    width: 167px;
+                    height: 157px;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    width: 223px;
+                    height: 209px;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: -69px;
+                right: -75px;
+                width: 147px;
+                height: 147px;
+                @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+
+                @media screen and (min-width: 768px) {
+                    right: -139px;
+                    width: 176px;
+                    height: 171px;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    right: 13%;
+                    width: 232px;
+                    height: 229px;
+                }
+            }
         }
-    }
 
-    &__shumbox {
-        @media screen and (min-width: 768px) {
-            display: flex;
-            flex-wrap: wrap;
-            width: 600px;
-            margin: 0 auto;
+        &__arch {
+            width: 280px;
+            margin: 0 auto 18px;
+
+            @media screen and (min-width: 768px) {
+                width: 500px;
+                margin: 0 auto 68px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                width: 734px;
+            }
         }
 
-        @media screen and (min-width: 1024px) {
-            width: 80%;
+        &__archimg {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
-    }
+        &__txtbox {
+            margin: 30px 0 0 20px;
 
-    &__shum {
-        margin: 0 auto 20px;
-        width: 216px;
+            @media screen and (min-width: 1024px) {
+                line-height: 2;
+                margin: 98px 140px 0 140px;
+            }
+        }
 
-        @media screen and (min-width: 768px) {
-            width: 230px;
+        &__txt {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+
+            @media screen and (min-width: 768px) {
+                font-size: 21px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 28px;
+                margin-bottom: 35px;
+            }
+
+            &__sub {
+                position: relative;
+                font-size: 14px;
+                margin-bottom: 15px;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 16px;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    font-size: 16px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        &__shumcon {
+            margin-bottom: 200px;
+        }
+
+        &__txt2 {
+            position: relative;
+            text-align: center;
+            font-style: 15px;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+            @media screen and (min-width: 1024px) {
+                font-size: 20px;
+                margin-bottom: 60px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 272px;
+                left: -50px;
+                width: 89px;
+                height: 89px;
+                z-index: -1;
+                @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
+
+                @media screen and (min-width: 768px) {
+                    width: 210px;
+                    height: 198px;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    left: 26px;
+                    width: 280px;
+                    height: 264px;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -69px;
+                right: -96px;
+                width: 147px;
+                height: 147px;
+                @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+
+                @media screen and (min-width: 768px) {
+                    right: -145px;
+                    width: 250px;
+                    height: 236px;
+                    z-index: -1;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    right: -75px;
+                    width: 334px;
+                    height: 315px;
+                }
+            }
+        }
+
+        &__con {
+            width: 300px;
+            margin: 0 auto 140px;
+
+            @media screen and (min-width: 768px) {
+                display: flex;
+                width: 100%;
+
+                &:nth-of-type(2) {
+                    flex-direction: row-reverse;
+                }
+            }
+
+            @media screen and (min-width: 1024px) {
+                margin: 0 auto 280px;
+                width: 100%;
+            }
+        }
+
+        &__pic,
+        &__pic2 {
+            width: 300px;
+            margin-bottom: 8px;
+
+            @media screen and (min-width: 1024px) {
+                // width: 631px;
+                width: 50%;
+                height: 750px;
+            }
+        }
+
+        &__pic {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: -242px;
+                right: -64px;
+                width: 112px;
+                height: 100px;
+                @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+
+                @media screen and (min-width: 768px) {
+                    bottom: -23%;
+                    right: -169%;
+                    width: 219px;
+                    height: 227px;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    left: 147%;
+                    width: 583px;
+                    height: 477px;
+
+                }
+            }
+        }
+
+        &__pic2 {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: -54px;
+                left: -68px;
+                width: 147px;
+                height: 147px;
+                @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+
+                @media screen and (min-width: 1024px) {
+                    width: 311px;
+                    height: 222px;
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    top: 163px;
+                    right: 567px;
+                    width: 387px;
+                    height: 316px;
+                    @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+
+                    @media screen and (min-width: 1024px) {
+                        top: 51%;
+                        right: 202%;
+                        width: 500px;
+                        height: 400px;
+                    }
+                }
+            }
 
             &__img {
-                display: block;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
         }
 
-        @media screen and (min-width: 1024px) {
-            width: 384px;
+        &__txtbox {
+            @media screen and (min-width: 1024px) {
+                width: 38%;
+                margin: 98px 60px 0;
+            }
+        }
+
+        &__shumbox {
+            @media screen and (min-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+                width: 600px;
+                margin: 0 auto;
+            }
+
+            @media screen and (min-width: 1024px) {
+                width: 80%;
+            }
+
+        }
+
+        &__shum {
+            margin: 0 auto 20px;
+            width: 216px;
+
+            @media screen and (min-width: 768px) {
+                width: 230px;
+
+                &__img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            @media screen and (min-width: 1024px) {
+                width: 384px;
+            }
+        }
+
+        &__anime {
+            margin-bottom: 100px;
+
+            &__con1 {
+                @include work-pic($yellow, 'サイト');
+
+                &__img {
+                    @include work-img;
+                    background: url(../images/saito1.jpg) center center / cover;
+
+                    @media screen and (min-width: 1024px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &__con2 {
+                @include work-pic($pink, 'サムネ');
+
+                &__img {
+                    @include work-img;
+                    background: url(../images/thum01.jpg) center center / cover;
+
+                    @media screen and (min-width: 1024px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &__con3 {
+                @include work-pic($red, 'カンプ');
+
+                &__img {
+                    @include work-img;
+                    background: url(../images/kanp1.jpg) center center / cover;
+
+                    @media screen and (min-width: 1024px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &__con4 {
+                @include work-pic($yellow, 'サイト');
+
+                &__img {
+                    @include work-img;
+                    background: url(../images/saito2.jpg) center center / cover;
+
+                    @media screen and (min-width: 1024px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &__con5 {
+                @include work-pic($pink, 'サムネ');
+
+                &__img {
+                    @include work-img;
+                    background: url(../images/thum02.jpg) center center / cover;
+
+                    @media screen and (min-width: 1024px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &__con6 {
+                @include work-pic($red, 'カンプ');
+
+                &__img {
+                    @include work-img;
+                    background: url(../images/kanp3.jpg) center center / cover;
+
+                    @media screen and (min-width: 1024px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &__ttl {
+                font-size: 9px;
+                margin-bottom: 9px;
+
+                @media screen and (min-width: 1024px) {
+                    font-size: 12px;
+                    margin: 30px 0;
+                }
+            }
+
+            &__txt {
+                font-size: 14px;
+
+                @media screen and (min-width: 1024px) {
+                    font-size: 16px;
+                }
+            }
         }
     }
 
-    &__anime {
-        margin-bottom: 100px;
+    .swiper {
+        overflow: visible;
+    }
 
-        &__con1 {
-            @include work-pic($yellow, 'サイト');
+    .swiper-work {
+        width: 100%;
+        // height: 300px;
+    }
 
-            &__img {
-                @include work-img;
-                background: url(../images/saito1.jpg) center center / cover;
+    .skill {
+        background: $lightgray;
+
+        &__ttl {
+            font-size: 10px;
+            font-weight: normal;
+            text-align: center;
+            padding-top: 30px;
+            margin-bottom: 5px;
+
+            @media screen and (min-width: 768px) {
+                font-size: 15px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 20px;
+                margin-bottom: 18px;
+            }
+        }
+
+        &__arch {
+            width: 322px;
+            margin: 0 auto 30px;
+
+            @media screen and (min-width: 768px) {
+                width: 570px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                width: 761px;
+            }
+        }
+
+        &__archimg {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &__con {
+            width: 300px;
+            margin: 0 auto 60px;
+
+            @media screen and (min-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            @media screen and (min-width: 1024px) {
+                width: 60%;
+            }
+        }
+
+        &__box1,
+        &__box2,
+        &__box3 {
+            position: relative;
+            width: 292px;
+            height: 160px;
+            margin-bottom: 20px;
+
+            @media screen and (min-width: 1024px) {
+                width: 500px;
+                height: 269px;
+                margin: 0 50px 50px 0;
+            }
+        }
+
+        &__box1 {
+            padding: 30px;
+            @include maru(42% 58% 55% 45% / 59% 36% 64% 41%);
+
+            @media screen and (min-width: 768px) {
+                margin-right: 40px;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                width: 100px;
+                height: 100px;
+                background: url(../images/skill1.png) center center / cover;
+
                 @media screen and (min-width: 1024px) {
-                    width: 100%;
+                    width: 148px;
+                    height: 148px;
                 }
             }
         }
 
-        &__con2 {
-            @include work-pic($pink, 'サムネ');
+        &__box2 {
+            padding: 45px;
+            @include maru(40% 58% 55% 55% / 59% 36% 64% 41%);
 
-            &__img {
-                @include work-img;
-                background: url(../images/thum01.jpg) center center / cover;
+            &::after {
+                position: absolute;
+                content: "";
+                right: -12px;
+                bottom: 0;
+                width: 100px;
+                height: 100px;
+                background: url(../images/skill2.png) center center / cover;
+
                 @media screen and (min-width: 1024px) {
-                    width: 100%;
+                    width: 148px;
+                    height: 148px;
                 }
             }
         }
 
-        &__con3 {
-            @include work-pic($red, 'カンプ');
+        &__box3 {
+            padding-top: 40px;
+            @include maru(42% 42% 55% 45% / 59% 51% 64% 50%);
 
-            &__img {
-                @include work-img;
-                background: url(../images/kanp1.jpg) center center / cover;
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: -17px;
+                left: 0;
+                width: 120px;
+                height: 120px;
+                background: url(../images/skill3.png) center center / cover;
+
                 @media screen and (min-width: 1024px) {
-                    width: 100%;
+                    width: 180px;
+                    height: 180px;
                 }
             }
         }
-        &__con4 {
-            @include work-pic($yellow, 'サイト');
 
-            &__img {
-                @include work-img;
-                background: url(../images/saito2.jpg) center center / cover;
+        &__boxt {
+            width: 174px;
+            margin-left: 33%;
+            line-height: 1.4;
+            font-weight: bold;
+
+            @media screen and (min-width: 1024px) {
+                font-size: 20px;
+                margin: 25px 0 28px 33%;
+            }
+        }
+
+        &__ty {
+            width: 100%;
+            height: 285px;
+            text-align: center;
+            color: #fff;
+            background: url(../images/Frame.jpg) center center / cover;
+
+            @media screen and (min-width: 768px) {
+                background: url(../images/Frame3.jpg) center center / cover;
+                height: 320px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                margin-bottom: 80px;
+                height: 583px;
+
+            }
+
+            &__txt {
+                position: relative;
+                padding: 60px;
+                line-height: 1.4;
+                font-size: 18px;
+                font-weight: bold;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 20px;
+                }
+
                 @media screen and (min-width: 1024px) {
-                    width: 100%;
+                    padding-top: 130px;
+                    font-size: 24px;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 30px;
+                    left: 49%;
+                    width: 15px;
+                    font-weight: normal;
+                    border: 1px solid #fff;
+                    transform: rotate(90deg);
+                }
+            }
+
+            &__sub {
+                font-size: 12px;
+                font-family: $mohave;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 14px;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    font-size: 16px;
                 }
             }
         }
-        &__con5 {
-            @include work-pic($pink, 'サムネ');
+    }
 
-            &__img {
-                @include work-img;
-                background: url(../images/thum02.jpg) center center / cover;
-                @media screen and (min-width: 1024px) {
-                    width: 100%;
-                }
-            }
-        }
-        &__con6 {
-            @include work-pic($red, 'カンプ');
+    .contact {
+        position: relative;
 
-            &__img {
-                @include work-img;
-                background: url(../images/kanp3.jpg) center center / cover;
-                @media screen and (min-width: 1024px) {
-                    width: 100%;
-                }
-            }
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 250px;
         }
 
         &__ttl {
-            font-size: 9px;
-            margin-bottom: 9px;
-            @media screen and (min-width: 1024px) {
-              font-size: 12px;
-              margin: 30px 0;
-            }
-        }
-
-        &__txt {
-            font-size: 14px;
-            @media screen and (min-width: 1024px) {
-              font-size: 16px;
-            }
-        }
-    }
-}
-
-.swiper {
-    overflow: visible;
-}
-
-.swiper-work {
-    width: 100%;
-    // height: 300px;
-}
-
-.skill {
-    background: $lightgray;
-
-    &__ttl {
-        font-size: 10px;
-        font-weight: normal;
-        text-align: center;
-        padding-top: 30px;
-        margin-bottom: 5px;
-
-        @media screen and (min-width: 768px) {
-            font-size: 15px;
-        }
-        @media screen and (min-width: 1024px) {
-          font-size: 20px;
-          margin-bottom: 18px;
-        }
-    }
-
-    &__arch {
-        width: 322px;
-        margin: 0 auto 30px;
-
-        @media screen and (min-width: 768px) {
-            width: 570px;
-        }
-        @media screen and (min-width: 1024px) {
-          width: 761px;
-        }
-    }
-
-    &__archimg {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    &__con {
-        width: 300px;
-        margin: 0 auto 60px;
-
-        @media screen and (min-width: 768px) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 90%;
-            margin: 0 auto;
-        }
-        @media screen and (min-width: 1024px) {
-          width: 60%;
-        }
-    }
-
-    &__box1,
-    &__box2,
-    &__box3 {
-        position: relative;
-        width: 292px;
-        height: 160px;
-        margin-bottom: 20px;
-@media screen and (min-width: 1024px) {
-  width: 500px;
-  height: 269px;
-  margin: 0 50px 50px 0;
-}
-    }
-
-    &__box1 {
-        padding: 30px;
-        @include maru(42% 58% 55% 45% / 59% 36% 64% 41%);
-        @media screen and (min-width: 768px) {
-          margin-right: 40px;
-        }
-
-        &::after {
-            position: absolute;
-            content: "";
-            bottom: 0;
-            left: 0;
-            width: 100px;
-            height: 100px;
-            background: url(../images/skill1.png) center center / cover;
-            @media screen and (min-width: 1024px) {
-              width: 148px;
-              height: 148px;
-            }
-        }
-    }
-
-    &__box2 {
-        padding: 45px;
-        @include maru(40% 58% 55% 55% / 59% 36% 64% 41%);
-
-        &::after {
-            position: absolute;
-            content: "";
-            right: -12px;
-            bottom: 0;
-            width: 100px;
-            height: 100px;
-            background: url(../images/skill2.png) center center / cover;
-            @media screen and (min-width: 1024px) {
-                width: 148px;
-                height: 148px;
-              }
-        }
-    }
-
-    &__box3 {
-        padding-top: 40px;
-        @include maru(42% 42% 55% 45% / 59% 51% 64% 50%);
-
-        &::after {
-            position: absolute;
-            content: "";
-            bottom: -17px;
-            left: 0;
-            width: 120px;
-            height: 120px;
-            background: url(../images/skill3.png) center center / cover;
-            @media screen and (min-width: 1024px) {
-                width: 180px;
-                height: 180px;
-              }
-        }
-    }
-
-    &__boxt {
-        width: 174px;
-        margin-left: 33%;
-        line-height: 1.4;
-        font-weight: bold;
-        @media screen and (min-width: 1024px) {
-          font-size: 20px;
-          margin: 25px 0 28px 33%;
-        }
-    }
-
-    &__ty {
-        width: 100%;
-        height: 285px;
-        text-align: center;
-        color: #fff;
-        background: url(../images/Frame.jpg) center center / cover;
-        @media screen and (min-width: 768px) {
-            background: url(../images/Frame3.jpg) center center / cover;
-          height: 320px;
-        }
-        @media screen and (min-width: 1024px) {
-            margin-bottom: 80px;
-            height: 583px;
-          
-        }
-
-        &__txt {
-            position: relative;
-            padding: 60px;
-            line-height: 1.4;
-            font-size: 18px;
-            font-weight: bold;
+            font-size: 10px;
+            font-weight: normal;
+            text-align: center;
+            padding-top: 30px;
+            margin-bottom: 10px;
 
             @media screen and (min-width: 768px) {
+                font-size: 15px;
+            }
+
+            @media screen and (min-width: 1024px) {
                 font-size: 20px;
-            }
-            @media screen and (min-width: 1024px) {
-                padding-top: 130px;
-              font-size: 24px;
-            }
-
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: 30px;
-                left: 49%;
-                width: 15px;
-                font-weight: normal;
-                border: 1px solid #fff;
-                transform: rotate(90deg);
+                margin-bottom: 20px;
             }
         }
 
-        &__sub {
-            font-size: 12px;
-            font-family: $mohave;
+        &__arch {
+            position: relative;
+            width: 304px;
+            margin: 0 auto 100px;
 
             @media screen and (min-width: 768px) {
-                font-size: 14px;
+                width: 538px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    bottom: -40px;
+                    right: -232px;
+                    width: 40%;
+                    height: 220px;
+                    @include maru (39% 57% 49% 59% / 59% 44% 60% 43%);
+
+                    @media screen and (min-width: 1024px) {
+                        right: -61%;
+                        width: 290px;
+                        height: 270px;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    bottom: -660px;
+                    left: -148px;
+                    width: 20%;
+                    height: 134px;
+                    @include maru (39% 57% 49% 59% / 59% 44% 60% 43%);
+
+                    @media screen and (min-width: 1024px) {
+                        left: -350px;
+                        bottom: -700px;
+                        width: 220px;
+                        height: 200px;
+                    }
+                }
             }
+
             @media screen and (min-width: 1024px) {
-              font-size: 16px;
+                width: 717px;
+                margin: 0 auto 160px;
+            }
+        }
+
+        &__archimg {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            bottom: -14%;
+            left: -18%;
+            width: 134%;
+            height: 83%;
+            @include maru (45% 57% 49% 59% / 59% 44% 60% 43%);
+
+            @media screen and (min-width: 768px) {
+                bottom: -18%;
+                left: 5%;
+                width: 91%;
+            }
+
+            @media screen and (min-width: 1024px) {
+                bottom: -135px;
+                left: 19%;
+                width: 62%;
+                height: 627px;
             }
         }
     }
-}
 
-.contact {
-    position: relative;
-    @media screen and (min-width: 1024px) {
-      margin-bottom: 250px;
-    }
+    .form {
+        width: 80%;
+        max-width: 456px;
+        margin: 0 auto 150px;
 
-    &__ttl {
-        font-size: 10px;
-        font-weight: normal;
-        text-align: center;
-        padding-top: 30px;
-        margin-bottom: 10px;
 
-        @media screen and (min-width: 768px) {
-            font-size: 15px;
+        &__box {
+            margin-bottom: 20px;
         }
-        @media screen and (min-width: 1024px) {
-          font-size: 20px;
-          margin-bottom: 20px;
-        }
-    }
 
-    &__arch {
-        position: relative;
-        width: 304px;
-        margin: 0 auto 100px;
-
-        @media screen and (min-width: 768px) {
-            width: 538px;
+        &__label {
+            display: block;
+            margin-bottom: 10px;
 
             &::after {
-                content: "";
-                position: absolute;
-                z-index: -1;
-                bottom: -40px;
-                right: -232px;
-                width: 40%;
-                height: 220px;
-                @include maru (39% 57% 49% 59% / 59% 44% 60% 43%);
-                @media screen and (min-width: 1024px) {
-                 right: -61%;
-                    width: 290px;
-                  height: 270px;
-                }
-            }
-
-            &::before {
-                content: "";
-                position: absolute;
-                z-index: -1;
-                bottom: -660px;
-                left: -148px;
-                width: 20%;
-                height: 134px;
-                @include maru (39% 57% 49% 59% / 59% 44% 60% 43%);
-                @media screen and (min-width: 1024px) {
-                  left: -350px;
-                  bottom: -700px;
-                    width: 220px;
-                  height: 200px;
-                }
+                content: "*";
+                color: #f00;
             }
         }
-        @media screen and (min-width: 1024px) {
-          width: 717px;
-          margin: 0 auto 160px;
+
+        &__input {
+            width: 100%;
+            padding: 10px;
+            background: #fff;
+            border: none;
+            border-radius: 7px;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+        }
+
+        &__message {
+            width: 100%;
+            height: 130px;
+            padding: 10px;
+            background: #fff;
+            border: none;
+            border-radius: 7px;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+        }
+
+        &__submit {
+            width: 100%;
+            padding: 10px;
+            background: #616161;
+            border: none;
+            border-radius: 7px;
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            -webkit-appearance: none;
         }
     }
-
-    &__archimg {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    &::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        bottom: -93px;
-        left: -73px;
-        width: 139%;
-        height: 569px;
-        @include maru (45% 57% 49% 59% / 59% 44% 60% 43%);
-        @media screen and (min-width: 1024px) {
-          bottom: -135px;
-          left: 30%;
-          width: 40%;
-          height: 627px;
-        }
-    }
-}
-
-.form {
-    width: 80%;
-    max-width: 456px;
-    margin: 0 auto 150px;
-
-
-    &__box {
-        margin-bottom: 20px;
-    }
-
-    &__label {
-        display: block;
-        margin-bottom: 10px;
-
-        &::after {
-            content: "*";
-            color: #f00;
-        }
-    }
-
-    &__input {
-        width: 100%;
-        padding: 10px;
-        background: #fff;
-        border: none;
-        border-radius: 7px;
-        font-size: 14px;
-        letter-spacing: 0.1em;
-    }
-
-    &__message {
-        width: 100%;
-        height: 130px;
-        padding: 10px;
-        background: #fff;
-        border: none;
-        border-radius: 7px;
-        font-size: 14px;
-        letter-spacing: 0.1em;
-    }
-
-    &__submit {
-        width: 100%;
-        padding: 10px;
-        background: #616161;
-        border: none;
-        border-radius: 7px;
-        color: #fff;
-        font-size: 14px;
-        letter-spacing: 0.1em;
-        cursor: pointer;
-        -webkit-appearance: none;
-    }
-}
 }
