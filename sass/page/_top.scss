@@ -794,8 +794,13 @@ max-width: 500px;
     }
 
     .skill {
+        padding-bottom: 10%;
         background: $lightgray;
-
+@media screen and (min-width: 768px) {
+  padding-bottom: 17%;
+}@media screen and (min-width: 1024px) {
+  padding-bottom: 160px;
+}
         &__ttl {
             font-size: 10px;
             font-weight: normal;
@@ -940,32 +945,18 @@ max-width: 500px;
                 margin: 25px 0 28px 33%;
             }
         }
+    }
 
-        &__ty {
-            width: 100%;
-            height: 285px;
-            text-align: center;
+        .ty {
             color: #fff;
-            background: url(../images/Frame.jpg) center center / cover;
-
-            @media screen and (min-width: 768px) {
-                background: url(../images/Frame3.jpg) center center / cover;
-                height: 320px;
-            }
-
-            @media screen and (min-width: 1024px) {
-                margin-bottom: 80px;
-                height: 583px;
-
-            }
 
             &__txt {
                 position: relative;
-                padding: 60px;
                 line-height: 1.4;
                 font-size: 18px;
                 font-weight: bold;
-
+                text-align: center;
+                z-index: 1;
                 @media screen and (min-width: 768px) {
                     font-size: 20px;
                 }
@@ -975,21 +966,35 @@ max-width: 500px;
                     font-size: 24px;
                 }
 
+                @media screen and (min-width: 1024px) {
+                  padding: 0;
+                }
+
+                
+
                 &::after {
                     content: "";
                     position: absolute;
-                    bottom: 30px;
+                    bottom: -18px;
                     left: 49%;
                     width: 15px;
                     font-weight: normal;
                     border: 1px solid #fff;
                     transform: rotate(90deg);
                 }
+
+            
             }
 
             &__sub {
+               position: relative;
+               padding-top: 50px;
                 font-size: 12px;
                 font-family: $mohave;
+                text-align: center;
+                color: #fff;
+                z-index: 1;
+                }
 
                 @media screen and (min-width: 768px) {
                     font-size: 14px;
@@ -998,9 +1003,33 @@ max-width: 500px;
                 @media screen and (min-width: 1024px) {
                     font-size: 16px;
                 }
+
+                &__bg {
+                    position: relative;
+                    margin-bottom: 7%;
+                    width: 100%;
+                    height: 20px;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -177px;
+                        left: 0;
+                        width: 100%;
+                        height: 466px;
+                        background: url(../images/Frame.webp) center center / cover;
+                        @media screen and (min-width: 768px) {
+                            bottom: -109px;
+                          height: 46vh;
+                        }
+                        @media screen and (min-width: 1024px) {
+                            height: 59vh;
+                            bottom: -244px;
+                            background: url(../images/Frame2.webp) center center / cover;
+                        }
+                }
             }
         }
-    }
+    
 
     .contact {
         position: relative;

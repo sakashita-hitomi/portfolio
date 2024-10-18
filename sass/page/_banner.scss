@@ -50,7 +50,7 @@
                   font-size: 120px;
                 }
                 @media screen and (min-width: 1024px) {
-                    left: -225px;
+                    left: -124px;
                   font-size: 200px;
                 }
             }
@@ -70,8 +70,11 @@
             flex-wrap: wrap;
             justify-content: space-between;
             gap: 40px;
-            width: 70%;
+            width: 93%;
             margin: 0 auto 80px;
+            @media screen and (min-width: 1330px) {
+              width: 70%; 
+            }
            
         }
     }

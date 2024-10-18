@@ -37,7 +37,7 @@
                 background: #000;
             }
             &::after {
-                content: "BANNER";
+                content: "THUMBNAIL";
                 position: absolute;
                 top: 6px;
                 left: -121px;
@@ -51,7 +51,7 @@
                   font-size: 120px;
                 }
                 @media screen and (min-width: 1024px) {
-                    left: -225px;
+                    left: -109px;
                   font-size: 200px;
                 }
             }
@@ -71,17 +71,18 @@
     &__con {
         @media screen and (min-width: 768px) {
             
-            // &:nth-of-type(2) {
-            //     flex-direction: row-reverse;
-            // } 
+           
         }
         @media screen and (min-width: 1024px) {
-            display: flex;
+          display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             gap: 40px;
-            width: 70%;
+            width: 94%;
             margin: 0 auto 80px;
+        }
+        @media screen and (min-width: 1330px) {
+            width: 70%;
            
         }
     }
