@@ -80,6 +80,7 @@
             width: 100%;
             height: 350px;
             background: url(../images/mv.webp) center right / contain no-repeat;
+           
 
             @media screen and (min-width: 768px) {
                 width: 100%;
@@ -134,7 +135,8 @@
             position: relative;
             padding: 50px 0;
             margin-bottom: 100px;
-max-width: 500px;
+            max-width: 500px;
+
             @media screen and (min-width: 768px) {
                 width: 450px;
             }
@@ -229,6 +231,29 @@ max-width: 500px;
                 width: 89px;
                 height: 89px;
                 @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
+                animation: round_anime 20s linear infinite;
+
+                @keyframes round_anime {
+                    0% {
+                        border-radius: 70% 100% 100% 80% / 70% 80% 100% 100%;
+                    }
+
+                    25% {
+                        border-radius: 90% 90% 90% 90% / 90% 90% 90% 90%;
+                    }
+
+                    50% {
+                        border-radius: 100% 70% 70% 100% / 70% 100% 70% 90%;
+                    }
+
+                    75% {
+                        border-radius: 90% 90% 90% 90% / 90% 90% 90% 90%;
+                    }
+
+                    100% {
+                        border-radius: 70% 100% 100% 80% / 70% 80% 100% 100%;
+                    }
+                }
 
                 @media screen and (min-width: 768px) {
                     top: 61px;
@@ -251,6 +276,29 @@ max-width: 500px;
                 width: 147px;
                 height: 147px;
                 @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+                animation: round_anime 20s linear infinite;
+
+                @keyframes round_anime {
+                    0% {
+                        border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                    }
+
+                    25% {
+                        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                    }
+
+                    50% {
+                        border-radius: 70% 30% 30% 70% / 50% 70% 30% 50%;
+                    }
+
+                    75% {
+                        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                    }
+
+                    100% {
+                        border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                    }
+                }
 
                 @media screen and (min-width: 768px) {
                     top: 223px;
@@ -292,6 +340,29 @@ max-width: 500px;
                 height: 665px;
                 z-index: -1;
                 @include maru(57% 62% 45% 55% / 57% 54% 46% 43%);
+                animation: round_anime 20s linear infinite;
+
+                @keyframes round_anime {
+                    0% {
+                        border-radius: 70% 100% 100% 80% / 70% 80% 100% 100%;
+                    }
+
+                    25% {
+                        border-radius: 90% 90% 90% 90% / 90% 90% 90% 90%;
+                    }
+
+                    50% {
+                        border-radius: 100% 70% 70% 100% / 70% 100% 70% 90%;
+                    }
+
+                    75% {
+                        border-radius: 90% 90% 90% 90% / 90% 90% 90% 90%;
+                    }
+
+                    100% {
+                        border-radius: 70% 100% 100% 80% / 70% 80% 100% 100%;
+                    }
+                }
 
                 @media screen and (min-width: 1024px) {
                     top: -164px;
@@ -368,6 +439,29 @@ max-width: 500px;
                 width: 89px;
                 height: 89px;
                 @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
+                animation: round_anime 20s linear infinite;
+
+                @keyframes round_anime {
+                    0% {
+                        border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                    }
+
+                    25% {
+                        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                    }
+
+                    50% {
+                        border-radius: 70% 30% 30% 70% / 50% 70% 30% 50%;
+                    }
+
+                    75% {
+                        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                    }
+
+                    100% {
+                        border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                    }
+                }
 
                 @media screen and (min-width: 768px) {
                     top: 127px;
@@ -391,6 +485,29 @@ max-width: 500px;
                 width: 147px;
                 height: 147px;
                 @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+                animation: round_anime 20s linear infinite;
+
+                @keyframes round_anime {
+                    0% {
+                        border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                    }
+
+                    25% {
+                        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                    }
+
+                    50% {
+                        border-radius: 70% 30% 30% 70% / 50% 70% 30% 50%;
+                    }
+
+                    75% {
+                        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                    }
+
+                    100% {
+                        border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                    }
+                }
 
                 @media screen and (min-width: 768px) {
                     right: -139px;
@@ -491,6 +608,30 @@ max-width: 500px;
                 height: 89px;
                 z-index: -1;
                 @include maru(33% 67% 69% 31% / 52% 61% 39% 48%);
+                animation: round_anime 20s linear infinite;
+
+                @keyframes round_anime {
+                    0% {
+                        border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                    }
+
+                    25% {
+                        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                    }
+
+                    50% {
+                        border-radius: 70% 30% 30% 70% / 50% 70% 30% 50%;
+                    }
+
+                    75% {
+                        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                    }
+
+                    100% {
+                        border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                    }
+                }
+
 
                 @media screen and (min-width: 768px) {
                     width: 210px;
@@ -512,6 +653,30 @@ max-width: 500px;
                 width: 147px;
                 height: 147px;
                 @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+                animation: round_anime 20s linear infinite;
+
+                @keyframes round_anime {
+                    0% {
+                        border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                    }
+
+                    25% {
+                        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                    }
+
+                    50% {
+                        border-radius: 70% 30% 30% 70% / 50% 70% 30% 50%;
+                    }
+
+                    75% {
+                        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                    }
+
+                    100% {
+                        border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                    }
+                }
+
 
                 @media screen and (min-width: 768px) {
                     right: -145px;
@@ -573,6 +738,29 @@ max-width: 500px;
                 width: 112px;
                 height: 100px;
                 @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+                animation: round_anime 20s linear infinite;
+
+                @keyframes round_anime {
+                    0% {
+                        border-radius: 70% 100% 100% 80% / 70% 80% 100% 100%;
+                    }
+
+                    25% {
+                        border-radius: 90% 90% 90% 90% / 90% 90% 90% 90%;
+                    }
+
+                    50% {
+                        border-radius: 100% 70% 70% 100% / 70% 100% 70% 90%;
+                    }
+
+                    75% {
+                        border-radius: 90% 90% 90% 90% / 90% 90% 90% 90%;
+                    }
+
+                    100% {
+                        border-radius: 70% 100% 100% 80% / 70% 80% 100% 100%;
+                    }
+                }
 
                 @media screen and (min-width: 768px) {
                     bottom: -15%;
@@ -603,6 +791,30 @@ max-width: 500px;
                 width: 147px;
                 height: 147px;
                 @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+                animation: round_anime 20s linear infinite;
+
+                @keyframes round_anime {
+                    0% {
+                        border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                    }
+
+                    25% {
+                        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                    }
+
+                    50% {
+                        border-radius: 70% 30% 30% 70% / 50% 70% 30% 50%;
+                    }
+
+                    75% {
+                        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                    }
+
+                    100% {
+                        border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                    }
+                }
+
 
                 @media screen and (min-width: 1024px) {
                     width: 311px;
@@ -620,6 +832,29 @@ max-width: 500px;
                     width: 387px;
                     height: 316px;
                     @include maru(38% 62% 45% 55% / 57% 54% 46% 43%);
+                    animation: round_anime 20s linear infinite;
+
+                    @keyframes round_anime {
+                        0% {
+                            border-radius: 70% 100% 100% 80% / 70% 80% 100% 100%;
+                        }
+
+                        25% {
+                            border-radius: 90% 90% 90% 90% / 90% 90% 90% 90%;
+                        }
+
+                        50% {
+                            border-radius: 100% 70% 70% 100% / 70% 100% 70% 90%;
+                        }
+
+                        75% {
+                            border-radius: 90% 90% 90% 90% / 90% 90% 90% 90%;
+                        }
+
+                        100% {
+                            border-radius: 70% 100% 100% 80% / 70% 80% 100% 100%;
+                        }
+                    }
 
                     @media screen and (min-width: 1024px) {
                         top: 51%;
@@ -796,11 +1031,15 @@ max-width: 500px;
     .skill {
         padding-bottom: 10%;
         background: $lightgray;
-@media screen and (min-width: 768px) {
-  padding-bottom: 17%;
-}@media screen and (min-width: 1024px) {
-  padding-bottom: 160px;
-}
+
+        @media screen and (min-width: 768px) {
+            padding-bottom: 17%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            padding-bottom: 160px;
+        }
+
         &__ttl {
             font-size: 10px;
             font-weight: normal;
@@ -873,6 +1112,30 @@ max-width: 500px;
         &__box1 {
             padding: 30px;
             @include maru(42% 58% 55% 45% / 59% 36% 64% 41%);
+            animation: round_anime 20s linear infinite;
+
+            @keyframes round_anime {
+                0% {
+                    border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                }
+
+                25% {
+                    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                }
+
+                50% {
+                    border-radius: 70% 30% 30% 70% / 50% 70% 30% 50%;
+                }
+
+                75% {
+                    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                }
+
+                100% {
+                    border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                }
+            }
+
 
             @media screen and (min-width: 768px) {
                 margin-right: 40px;
@@ -897,6 +1160,30 @@ max-width: 500px;
         &__box2 {
             padding: 45px;
             @include maru(40% 58% 55% 55% / 59% 36% 64% 41%);
+            animation: round_anime 20s linear infinite;
+
+            @keyframes round_anime {
+                0% {
+                    border-radius: 70% 100% 100% 80% / 70% 80% 100% 100%;
+                }
+
+                25% {
+                    border-radius: 90% 90% 90% 90% / 90% 90% 90% 90%;
+                }
+
+                50% {
+                    border-radius: 100% 70% 70% 100% / 70% 100% 70% 90%;
+                }
+
+                75% {
+                    border-radius: 90% 90% 90% 90% / 90% 90% 90% 90%;
+                }
+
+                100% {
+                    border-radius: 70% 100% 100% 80% / 70% 80% 100% 100%;
+                }
+            }
+
 
             &::after {
                 position: absolute;
@@ -917,6 +1204,30 @@ max-width: 500px;
         &__box3 {
             padding-top: 40px;
             @include maru(42% 42% 55% 45% / 59% 51% 64% 50%);
+            animation: round_anime 20s linear infinite;
+
+            @keyframes round_anime {
+                0% {
+                    border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                }
+
+                25% {
+                    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                }
+
+                50% {
+                    border-radius: 70% 30% 30% 70% / 50% 70% 30% 50%;
+                }
+
+                75% {
+                    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                }
+
+                100% {
+                    border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                }
+            }
+
 
             &::after {
                 position: absolute;
@@ -947,89 +1258,93 @@ max-width: 500px;
         }
     }
 
-        .ty {
-            color: #fff;
+    .ty {
+        color: #fff;
 
-            &__txt {
-                position: relative;
-                line-height: 1.4;
-                font-size: 18px;
-                font-weight: bold;
-                text-align: center;
-                z-index: 1;
-                @media screen and (min-width: 768px) {
-                    font-size: 20px;
-                }
+        &__txt {
+            position: relative;
+            line-height: 1.4;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            z-index: 1;
 
-                @media screen and (min-width: 1024px) {
-                    padding-top: 130px;
-                    font-size: 24px;
-                }
-
-                @media screen and (min-width: 1024px) {
-                  padding: 0;
-                }
-
-                
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: -18px;
-                    left: 49%;
-                    width: 15px;
-                    font-weight: normal;
-                    border: 1px solid #fff;
-                    transform: rotate(90deg);
-                }
-
-            
+            @media screen and (min-width: 768px) {
+                font-size: 20px;
             }
 
-            &__sub {
-               position: relative;
-               padding-top: 50px;
-                font-size: 12px;
-                font-family: $mohave;
-                text-align: center;
-                color: #fff;
-                z-index: 1;
-                }
+            @media screen and (min-width: 1024px) {
+                padding-top: 130px;
+                font-size: 24px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                padding: 0;
+            }
+
+
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -18px;
+                left: 49%;
+                width: 15px;
+                font-weight: normal;
+                border: 1px solid #fff;
+                transform: rotate(90deg);
+            }
+
+
+        }
+
+        &__sub {
+            position: relative;
+            padding-top: 50px;
+            font-size: 12px;
+            font-family: $mohave;
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 16px;
+        }
+
+        &__bg {
+            position: relative;
+            margin-bottom: 7%;
+            width: 100%;
+            height: 20px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -177px;
+                left: 0;
+                width: 100%;
+                height: 466px;
+                background: url(../images/Frame.webp) center center / cover;
 
                 @media screen and (min-width: 768px) {
-                    font-size: 14px;
+                    bottom: -109px;
+                    height: 46vh;
                 }
 
                 @media screen and (min-width: 1024px) {
-                    font-size: 16px;
-                }
-
-                &__bg {
-                    position: relative;
-                    margin-bottom: 7%;
-                    width: 100%;
-                    height: 20px;
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        bottom: -177px;
-                        left: 0;
-                        width: 100%;
-                        height: 466px;
-                        background: url(../images/Frame.webp) center center / cover;
-                        @media screen and (min-width: 768px) {
-                            bottom: -109px;
-                          height: 46vh;
-                        }
-                        @media screen and (min-width: 1024px) {
-                            height: 59vh;
-                            bottom: -244px;
-                            background: url(../images/Frame2.webp) center center / cover;
-                        }
+                    height: 59vh;
+                    bottom: -244px;
+                    background: url(../images/Frame2.webp) center center / cover;
                 }
             }
         }
-    
+    }
+
 
     .contact {
         position: relative;
@@ -1076,6 +1391,30 @@ max-width: 500px;
                     width: 40%;
                     height: 220px;
                     @include maru (39% 57% 49% 59% / 59% 44% 60% 43%);
+                    animation: round_anime 20s linear infinite;
+
+                    @keyframes round_anime {
+                        0% {
+                            border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                        }
+
+                        25% {
+                            border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                        }
+
+                        50% {
+                            border-radius: 70% 30% 30% 70% / 50% 70% 30% 50%;
+                        }
+
+                        75% {
+                            border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                        }
+
+                        100% {
+                            border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                        }
+                    }
+
 
                     @media screen and (min-width: 1024px) {
                         right: -61%;
@@ -1093,6 +1432,30 @@ max-width: 500px;
                     width: 20%;
                     height: 134px;
                     @include maru (39% 57% 49% 59% / 59% 44% 60% 43%);
+                    animation: round_anime 20s linear infinite;
+
+                    @keyframes round_anime {
+                        0% {
+                            border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                        }
+
+                        25% {
+                            border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                        }
+
+                        50% {
+                            border-radius: 70% 30% 30% 70% / 50% 70% 30% 50%;
+                        }
+
+                        75% {
+                            border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+                        }
+
+                        100% {
+                            border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
+                        }
+                    }
+
 
                     @media screen and (min-width: 768px) {
                         bottom: -361%;
@@ -1134,6 +1497,29 @@ max-width: 500px;
             height: 83%;
             @include maru (45% 57% 49% 59% / 59% 44% 60% 43%);
             max-width: 644px;
+            animation: round_anime 20s linear infinite;
+
+            @keyframes round_anime {
+                0% {
+                    border-radius: 70% 100% 100% 80% / 70% 80% 100% 100%;
+                }
+
+                25% {
+                    border-radius: 90% 90% 90% 90% / 90% 90% 90% 90%;
+                }
+
+                50% {
+                    border-radius: 100% 70% 70% 100% / 70% 100% 70% 90%;
+                }
+
+                75% {
+                    border-radius: 90% 90% 90% 90% / 90% 90% 90% 90%;
+                }
+
+                100% {
+                    border-radius: 70% 100% 100% 80% / 70% 80% 100% 100%;
+                }
+            }
 
             @media screen and (min-width: 768px) {
                 bottom: -62%;
