@@ -444,10 +444,9 @@
                 text-decoration: none;
                 color: #fff;
 
-                // &::before {
-                //     content:"";
-
-                // }
+                &:hover {
+                    color: $darkorange;
+                }
 
                 @media screen and (min-width: 1024px) {
                     padding: 5px 10px;
@@ -456,9 +455,14 @@
             }
         }
     }
+    .icons1 {
+        font-size: 20px;
+    }
 
     .kanp {
-
+.icon2 {
+    font-size: 20px;
+}
         .works__con {
             color: #000;
 
@@ -498,6 +502,9 @@
 
         .works__box__link {
             color: #000;
+            &:hover {
+                color: $darkorange;
+            }
         }
 
     }
